@@ -1,0 +1,115 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+/* signup page  */
+.SignUpDiv{
+  display:flex;
+  line-height:40px;
+  align-items: center;
+  justify-content:center;
+}
+.signupinner{
+  margin-top:20px;
+  display:flex;
+  box-shadow:0 0 10px rgba(0 , 0, 0, 0.1);
+  border-radius:12px;
+  background-color: white;
+  margin:30px;
+}
+/* form  */
+.signupform{
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  margin-top:20px ;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  border-radius:12px 0 0 12px;
+}
+/* Signup heading */
+h1{
+  text-align:center;
+}
+/* welcome text */
+.welcometxt{
+  text-align: center;
+}
+.signUpWithGoogle{
+  width:350px;
+  padding:10px;
+  background-color: white;
+  border-radius: 4px;
+  border: 2px solid grey;
+  /* position:absolute; */
+}
+.hrdiv{
+  margin-top:10px;
+  position:relative;
+  height:40px;
+}
+.hr{
+  width:100%;
+  position:absolute;
+  border-bottom:2px solid grey;
+  top:50%;
+}
+.hrtext{
+  background-color:white;
+  position:absolute;
+  transform:translateX(-50%);
+  left:50%;
+  width:40px;
+  height:30px;
+  text-align: center;
+}
+input{
+  padding:10px;
+  border-radius: 4px;
+  border: 2px solid grey;
+  text-decoration:black;
+  width:100%;
+}
+.Labeldiv{
+  width:100%;
+}
+.namediv{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+}
+.firstnamediv{
+  display:flex;
+  flex-direction:column;
+}
+.nameinput{
+  width:160px;
+}
+.lastnamelabel{
+  margin-left:5px;  
+}
+.signupbtn{
+  margin-top:20px;
+  padding:13px;
+  background-color: #0060A4;
+  color:white;
+  border-radius: 4px;
+  border:none;
+  width:100%;
+}
+.logindiv{
+  display:flex;
+  justify-content: center;
+  margin-top:5px;
+}
+a{
+  text-decoration:none;
+  margin-left:10px;
+  color:#0060A4;
+}
+
+
+/* login page  */
