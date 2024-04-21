@@ -13,6 +13,7 @@
 .signupinner{
   margin-top:20px;
   display:flex;
+  flex-direction: column;
   box-shadow:0 0 10px rgba(0 , 0, 0, 0.1);
   border-radius:12px;
   background-color: white;
@@ -45,6 +46,7 @@ h1{
   border-radius: 4px;
   border: 2px solid grey;
   /* position:absolute; */
+  cursor:pointer;
 }
 .hrdiv{
   margin-top:10px;
@@ -100,6 +102,9 @@ input{
   border:none;
   width:100%;
 }
+.signupbtn:hover{
+  background-color: black;
+}
 .logindiv{
   display:flex;
   justify-content: center;
@@ -111,5 +116,43 @@ a{
   color:#0060A4;
 }
 
+@media(max-width:830px){
+.image{
+  display:none;
+}
+}
+@media(max-width:425px) and (min-width:280px){
+  .signupinner{
+    width: 80%;
+    justify-content: center;
+  }
+  .signupform{
+    width: 100%;
+  }
+  h1{
+    font-size:20px;
+  }
+  p{
+    font-size:14px;
+  }
+  .signUpWithGoogle{
+    width: 100%;
+  }
+  .signUpWithGoogle span{
+    font-size:13px;
+  }
+  .namediv{
+    flex-direction:column;
+  }
+  .nameinput{
+    width:100%;
+  }
+  .logindiv span{
+    font-size:14px;
+  }
+  .welcometxt{
+    font-size:15px;
+  }
+  }
 
 /* login page  */
