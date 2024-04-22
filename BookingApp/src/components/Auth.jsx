@@ -8,14 +8,17 @@ function Auth() {
     return (
         <div className="SignUpDiv">
             <div className="signupinner">
-                <img className="image" src={image} alt="signupImage" width="400px" />
+                <img className="image" src={image} alt="signupImage" />
                 {/* form  */}
+                <div className="formdiv">
                 {
                     isLogin ? <Login /> : <Signup />
                 }
                 <div className="logindiv">
-                    <span>Already have an account?</span>
-                    <button >log in</button>
+                    <span>{isLogin?"Don't ":"Already "}have an account?</span> 
+                    <button className='signbtn' onClick={()=>setLogin(checkLogin=>!checkLogin)}>{isLogin ? "Sign up":"Log in"}</button>
+                </div>
+
                 </div>
             </div>
         </div>)

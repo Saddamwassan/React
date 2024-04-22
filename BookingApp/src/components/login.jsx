@@ -15,14 +15,8 @@ function Login() {
           <label htmlFor="">Password*</label>
           </div>
           <input type="text" placeholder="Create your password" />
-          
           <button className="signupbtn"> Log in</button>
-          {/* <div className="logindiv">
-            <span>Don't have an account?</span>
-            <a href="./login.jsx">Sign up</a>
-          </div> */}
         </form>
   )
 }
-
 export default Login
