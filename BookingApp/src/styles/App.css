@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:sans-serif;
 }
 /* signup page  */
 .SignUpDiv{
@@ -26,11 +27,7 @@
   justify-content:center;
 }
 .signbtn{
-  background-color: black;
-  color:white;
-  padding:0 5px;
   border-radius:8px;
-  height: 30px;
 }
 /* form  */
 .signupform{
@@ -43,7 +40,7 @@
 }
 .image{
   border-radius:12px 0 0 12px;
-  height:662px;
+  height:672px;
   width:400px;
 }
 /* Signup heading */
@@ -55,13 +52,13 @@ h1{
   text-align: center;
 }
 .signUpWithGoogle{
-  width:350px;
-  padding:10px;
+  width:100%;
+  padding:12px;
   background-color: white;
   border-radius: 4px;
   border: 2px solid grey;
-  /* position:absolute; */
   cursor:pointer;
+  margin-top: 5px;
 }
 .hrdiv{
   margin-top:10px;
@@ -104,9 +101,6 @@ input{
   display:flex;
   flex-direction:column;
 }
-.nameinput{
-  width:160px;
-}
 .lastnamelabel{
   margin-left:5px;  
 }
@@ -129,14 +123,12 @@ input{
   margin-top:5px;
   gap:10px;
   padding-bottom: 10px;
-
 }
-a{
+.logindiv a{
   text-decoration:none;
   margin-left:10px;
   color:#0060A4;
 }
-
 @media(max-width:830px){
 .image{
   display:none;
@@ -164,10 +156,7 @@ a{
   }
   .namediv{
     flex-direction:column;
-  }
-  .nameinput{
-    width:100%;
-  }
+    } 
   .logindiv span{
     font-size:14px;
   }

@@ -4,7 +4,6 @@ function Login() {
     <form action="#" className="signupform">
           <h1>Log in to Your Account</h1>
           <p className="welcometxt">Welcome back to techVision, Good to see you again!</p>
-          <button className="signUpWithGoogle"> <i className="fa-brands fa-google"></i> <span> Log in with google</span></button>
           {/* email  */}
           <div className="Labeldiv">
           <label htmlFor="">Email*</label>
@@ -16,7 +15,14 @@ function Login() {
           </div>
           <input type="text" placeholder="Create your password" />
           <button className="signupbtn"> Log in</button>
-        </form>
+          {/*  hrdiv  */}
+    <div className="hrdiv">
+     <div className="hr"></div>
+     <span className="hrtext" >OR</span>
+    </div>
+    {/* signup with google  */}
+    <button className="signUpWithGoogle"> <i className="fa-brands fa-google"></i> <span> Log in with google</span></button>
+     </form>
   )
 }
 export default Login

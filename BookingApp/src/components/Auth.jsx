@@ -16,7 +16,7 @@ function Auth() {
                 }
                 <div className="logindiv">
                     <span>{isLogin?"Don't ":"Already "}have an account?</span> 
-                    <button className='signbtn' onClick={()=>setLogin(checkLogin=>!checkLogin)}>{isLogin ? "Sign up":"Log in"}</button>
+                    <a className='signbtn' onClick={()=>setLogin(checkLogin=>!checkLogin)}>{isLogin ? "Sign up":"Log in"}</a>
                 </div>
 
                 </div>

@@ -3,13 +3,7 @@ function Signup() {
   return (
     <form action="#" className="signupform">
     <h1>Signup for Your Account</h1>
-    <p className="welcometxt">Welcome to techVision, Signup to explore more.</p>
-    <button className="signUpWithGoogle"> <i className="fa-brands fa-google"></i> <span> Signup with google</span></button>
-    {/*  hrdiv  */}
-    <div className="hrdiv">
-     <div className="hr"></div>
-     <span className="hrtext" >OR</span>
-    </div>
+    <p className="welcometxt">Welcome to techVision, Signup to explore more.</p>    
     <div className="namediv">
     {/* firstname  */}
     <div className="firstnamediv">
@@ -38,6 +32,14 @@ function Signup() {
     </div>
     <input type="text" placeholder="re-enter password" />
     <button className="signupbtn"> Sign up</button>
+    {/*  hrdiv  */}
+    <div className="hrdiv">
+     <div className="hr"></div>
+     <span className="hrtext" >OR</span>
+    </div>
+    {/* signup with google  */}
+    <button className="signUpWithGoogle"> <i className="fa-brands fa-google"></i> <span> Signup with google</span></button>
+
   </form>
   )
 }
