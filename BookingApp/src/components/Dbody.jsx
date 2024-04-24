@@ -12,9 +12,17 @@ function Dbody() {
             <i className="fa-duotone fa-plus addcardicon"></i>
             </div>
         <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+       
+
         </div>
     </div>
   )
 }
-
 export default Dbody

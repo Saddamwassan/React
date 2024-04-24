@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 function Login() {
   return (
     <form action="#" className="signupform">
@@ -22,6 +23,7 @@ function Login() {
     </div>
     {/* signup with google  */}
     <button className="signUpWithGoogle"> <i className="fa-brands fa-google"></i> <span> Log in with google</span></button>
+    <Link to="dashboard">dashboard</Link>
      </form>
   )
 }
