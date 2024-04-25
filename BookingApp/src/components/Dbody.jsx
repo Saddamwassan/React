@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 // import "../styles/dashboard.css" 
+import cardDetail from "./mydata"
 function Dbody() {
   return (
     <div className='dbody'>
@@ -11,14 +12,10 @@ function Dbody() {
             <div className="addcard">
             <i className="fa-duotone fa-plus addcardicon"></i>
             </div>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+       {
+        cardDetail.map((item)=>
+        <Card data={item}/>)
+       }
        
 
         </div>
