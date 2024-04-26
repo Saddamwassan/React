@@ -1,6 +1,7 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import "../styles/card.css"
 function Card({data}) {
+  const[isOn,setStatus] = useState(false);
   return (
     <div className='card'>
       <h3>{`${data.duration} ${data.title}`}</h3>
@@ -10,8 +11,8 @@ function Card({data}) {
       </div>
       {/* booking status  */}
       <div className="status">
-          <input className="slider" type="checkbox" />
-          <span>Booking is ON</span>
+          <input className="slider" type="checkbox" onClick = {()=>setStatus(isBooking=>!isBooking)}/>
+          <span>Booking is {isOn?"ON":"OFF"}</span>
       </div>
       <div className="description">
         <p>{data.description}</p>

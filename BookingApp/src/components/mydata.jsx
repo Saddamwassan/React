@@ -7,32 +7,32 @@ export default[
        description:` Meet me in next 30 mins.`
     },
     {
-        title:"Science Mints",
-        duration:20,
-        day:"Saturday",
-        link:"some link",
-        description: "we will have a talk about our new project." 
-     },
-     {
-        title:"Let's meet in ",
-        duration:20,
+      title:"Minutes Meeting",
+      duration:30,
         day:"Saturday",
         link:"some link",
         description: "we will have a talk about our new project." 
      },
      {
         title:"Minutes Meeting",
-        duration:20,
+        duration:40,
         day:"Saturday",
         link:"some link",
-        description: "we will have a talk about our new project." 
+        description: "School meeting." 
      },
      {
         title:"Minutes Meeting",
-        duration:20,
+        duration:50,
         day:"Saturday",
         link:"some link",
-        description: "we will have a talk about our new project." 
+        description: "Vacation workshop meeting" 
+     },
+     {
+        title:"Minutes Meeting",
+        duration:60,
+        day:"Saturday",
+        link:"some link",
+        description: "Business Meeting" 
      },
 
 ]

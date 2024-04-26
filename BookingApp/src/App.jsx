@@ -5,6 +5,7 @@ import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Myschedules from "./components/Myschedules"
 import Profile from "./components/Profile"
 import Dashboard from "./components/dashboard"
+import BookingForm from "./components/BookingForm"
 export default function App(){
   const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ export default function App(){
     {
       path:'/profile',
       element:<Profile/>
+    },
+    {
+      path:'/bookingform',
+      element:<BookingForm />
     }
   ])
   return(
