@@ -82,7 +82,7 @@ h1{
   height:30px;
   text-align: center;
 }
-input{
+form input{
   padding:10px;
   border-radius: 4px;
   border: 2px solid grey;
