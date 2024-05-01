@@ -5,21 +5,24 @@ function BookingForm() {
   return (
     <div className="bookingform">
       <Nav />
-      <div>BookingForm</div>
+      <div className="bookingdiv">
+      <h3>Book your meeting</h3>
       {/* title  */}
-      <div className='title'>
+      <div className='bookingtitle'>
       <label htmlFor="title" >Title</label>
-      <input type="text" />
+      <input type="text" placeholder='title' />
       </div>
       {/* url  */}
-      <div className="url">
-      <label htmlFor="Url">URL</label>
-      <input type="text" />
+      <div className="bookingUrl">
+      <label htmlFor="url">Url</label>
+      <input type="text" placeholder='url'/>
       </div>
       {/* description  */}
-      <div className='description'                                                                           >
+      <div className='bookingdescription'                                                                           >
       <label htmlFor="description">Description</label>
-      <input type="text" />
+      <input type="text" placeholder='description' />
+      </div>
+
       </div>
     </div>
   )

@@ -19,8 +19,6 @@ function Dbody() {
         cardDetail.map((item,index)=>
         <Card data={item} key={index}/>)
        }
-       
-
         </div>
     </div>
   )

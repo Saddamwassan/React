@@ -3,13 +3,36 @@
     padding:0;
     box-sizing:border-box;
 }
-.title, .description,.url{
+.bookingform{
+    min-height:100vh;
+}
+
+.bookingdiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px 0;
+}
+.bookingdiv h3{
+    text-align: left;
+    width:100%;
+    padding:20px 130px;
+
+}
+.bookingtitle, .bookingdescription,.bookingUrl{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    padding:20px 130px;
 }
-.title input,.description input,.url input{
-    width:70%;
+.bookingtitle input,.bookingdescription input,.bookingUrl input{
+    width:100%;
+    padding:10px;
+    border:none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
 }
 

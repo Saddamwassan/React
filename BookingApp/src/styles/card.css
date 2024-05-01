@@ -25,17 +25,40 @@
     margin:5px 0;
     border-top:1px solid rgb(221, 220, 220);
     padding:0 20px;
+    font-size: 14px;
+
+}
+.linkitself{
+    color:#257af9;
+    font-weight:bold;
 }
 .linkdiv a{
     text-decoration: none;
-    color:#0060A4;
+}
+.copylink{
+    color:#2548f9;
+
+}
+.statusDiv{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .status{
     display:flex;
-    gap:50px;
+    align-items: center;
 }
 .status span{
     margin-left:20px;
+}
+/* duration div  */
+.durationDiv{
+    padding:0 20px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-size: 14px;
+    
 }
 /* slider button  */
 .slidebtndiv{
