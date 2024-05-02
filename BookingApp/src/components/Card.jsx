@@ -32,8 +32,8 @@ function Card({data}) {
           <a href="x"><i className="fa-brands fa-x-twitter"></i></a>
       </div>
       <div className="editdiv">
-        <a href="delete" className="delete">delete</a>
-        <a href="edit" className="edit">edit</a>
+        <a href="delete" className="delete">Delete</a>
+        <a href="edit" className="edit">Edit</a>
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ function Dbody() {
         <h2>Your Appointments</h2>
         </div>
         <div className="cards">
-        <Link to="../bookingform">
+        <Link to="../bookingform" style={{ textDecoration: 'none' }}>
             <div className="addcard">
             <i className="fa-duotone fa-plus addcardicon"></i>
         </div>

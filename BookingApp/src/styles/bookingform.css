@@ -3,36 +3,81 @@
     padding:0;
     box-sizing:border-box;
 }
-.bookingform{
+.bookingdiv{
     min-height:100vh;
+    display: flex;
+    justify-content: center;
 }
 
-.bookingdiv{
+.bookingform{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding:40px 0;
+    width: 550px;
 }
-.bookingdiv h3{
+.bookingform h3{
     text-align: left;
     width:100%;
     padding:20px 130px;
 
 }
-.bookingtitle, .bookingdescription,.bookingUrl{
+.bookingtitle,.bookingUrl,.duration{
     display:flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding:20px 130px;
+    padding:20px 0;
+    gap:5px;
 }
-.bookingtitle input,.bookingdescription input,.bookingUrl input{
+.bookingdescription{
+    padding:20px 0 0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap:5px;
+    border-bottom: 1px solid grey;
+}
+.bookingtitle input,.bookingdescription textarea,.bookingUrl input{
     width:100%;
     padding:10px;
     border:none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    
+    outline:none;
+}
+.duration input{
+    padding:10px;
+    border:none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline:none;
+    width:100px;
+    margin-right:10px;
+}
+/* buttons  */
+.button{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding:30px 0;
+    border-bottom: 1px solid grey;
+
+}
+.Cancel{
+    padding:10px;
+    background:none;
+    color:rgb(0, 102, 255);
+    border: none;
+}
+.Add_booking{
+    padding:5px;
+    background-color: rgb(0, 123, 255);
+    color:white;
+    border: none;
+    border-radius: 4px;
 }
 

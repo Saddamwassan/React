@@ -1,17 +1,14 @@
 import React from 'react'
-function Schedule(data) {
+import "../styles/schedule.css"
+function Schedule({data}) {
   return (
     <div className='schedules'>
-        {/* labels  */}
-        <div className="labels">
-            <span>Day</span>
-            <span>Duration</span>
-            <span>Meeting Type</span>
-            <span>With</span>
-            <span>status</span>
-        </div>
-        {/* data  */}
-        <h3>{data.title}</h3>
+      {/* value  */}
+    <p>{data.day}</p>
+    <p>{data.duration}</p>
+    <p>{data.type}</p>
+    <p>{data.with}</p>
+    <p>{data.status}</p>
     </div>
   )
 }
