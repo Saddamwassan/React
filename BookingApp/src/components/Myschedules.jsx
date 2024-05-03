@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './nav'
-import bookingData from "./mydata"
+// import bookingData from "./mydata"
 import Schedule from './schedule'
 import "../styles/schedule.css"
 
@@ -13,18 +13,28 @@ function Myschedules() {
     <div className='myschedule'>
       <h3>My Bookings</h3>
         {/* labels  */}
-      <div className="labels">
+        <table>
+          <tr>
+            <td>
             <span>Day</span>
+            </td>
+            <td>
             <span>Duration</span>
+            </td>
+            <td>
             <span>Meeting Type</span>
+            </td>
+            <td>
             <span>With</span>
+            </td>
+            <td>
             <span>status</span>
-        </div>
-      {
-        // bookingData.map((item)=><Schedule data={item}/>)
-        bookingData.map((item,index)=>
-        <Schedule data={item} key={index}/>)
-      }
+            </td>
+          </tr>
+          {/* schedules  */}
+              <Schedule />
+        
+        </table>
     </div>
     </>
   )

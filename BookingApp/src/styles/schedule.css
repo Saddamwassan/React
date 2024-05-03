@@ -5,15 +5,34 @@
 }
 .myschedule{
     margin:60px 0 0 130px;
+}
+.myschedule h3{
+    margin-left:25px;
+}
+td{
+    padding:10px 25px ;
+}
+.myschedule span{
+    color:grey;
+}
+.schedules .day{
+    font-weight:bold;
+}
+.schedules  .meetingType, .meetwith{
+    color:rgb(0, 102, 255);
+}
+.schedules  .status{
+background-color: green;
+color:white;
+border-radius: 20px;
+padding:5px;
+}
+.statuscontainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.statuscontainer .cancel,.reschedule{
+    color:red;
+}
 
-}
-.schedules{
-    display:flex;
-    gap:105px;
-    margin-top:20px;
-}
-.labels {
-    display:flex;
-    gap:141px;
-    margin-top:10px;
-}

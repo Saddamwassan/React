@@ -59,6 +59,7 @@ function BookingForm() {
         <span>minutes</span>
         </div>
       </div>
+      <p className='question'>When will you be available for this meeting?</p>
       <div className="availibility">
         {/* weekly  */}
         <div>
@@ -71,6 +72,42 @@ function BookingForm() {
         <p>you are available for specific date.</p>
         </div>
       </div>
+        <p className='weeklymsg'>Define your weekly availibility below.</p>
+      <div className="days">
+      <div className="sunday">
+        <input type="checkbox" /><span>Sunday</span>
+      </div>
+      <div className="monday">
+        <input type="checkbox" /><span>Monday</span>
+      </div>
+      <div className="Tuesday">
+        <input type="checkbox" /><span>Tuesday</span>
+      </div>
+      <div className="Wednesday">
+        <input type="checkbox" /><span>Wednesday</span>
+      </div>
+      <div className="Thursday">
+        <input type="checkbox" /><span>Thursday</span>
+      </div>
+      <div className="Friday">
+        <input type="checkbox" /><span>Friday</span>
+      </div>
+      <div className="Saturday">
+        <input type="checkbox" /><span>Saturday</span>
+      </div>
+      </div>
+      <div className="unavailabledays">
+        <div>
+        <input type="checkbox" />
+        <span>Add unavailable dates</span>
+        </div>
+        <p>Define specific dates to exclude from your weekly availibility.</p>
+        <div className="button">
+                  <Button type="Cancel" className="Cancel"/>
+                  <Button type="Add booking" className="Add_booking"/>
+                </div>
+      </div>
+      
       </div>
     </div>
     </>

@@ -13,7 +13,7 @@ function Dbody() {
         <Link to="../bookingform" style={{ textDecoration: 'none' }}>
             <div className="addcard">
             <i className="fa-duotone fa-plus addcardicon"></i>
-        </div>
+            </div>
         </Link>
        {
         cardDetail.map((item,index)=>

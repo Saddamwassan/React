@@ -1,15 +1,32 @@
 import React from 'react'
 import "../styles/schedule.css"
-function Schedule({data}) {
+import { Link } from 'react-router-dom'
+function Schedule() {
   return (
-    <div className='schedules'>
+    <tr className='schedules'>
       {/* value  */}
-    <p>{data.day}</p>
-    <p>{data.duration}</p>
-    <p>{data.type}</p>
-    <p>{data.with}</p>
-    <p>{data.status}</p>
-    </div>
+    <td>
+    <p className='day'>Monday</p>
+    </td>
+    <td>
+    <p className='time'>15 mins</p>
+    </td>
+    <td>
+    <p className='meetingType'>Business meeting</p>
+    </td>
+    <td>
+    <p className='meetwith'>Ali Bhai</p>
+    </td>
+    <td className='statuscontainer'>
+    <p className='status'>scheduled</p>
+    <Link>
+    <p className='cancel'>cancel</p>
+    </Link>
+    <Link>
+    <p className='reschedule'>Reschedule</p>
+    </Link>
+    </td>
+    </tr>
   )
 }
 

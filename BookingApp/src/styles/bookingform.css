@@ -20,8 +20,9 @@
 .bookingform h3{
     text-align: left;
     width:100%;
-    padding:20px 130px;
-
+    padding:20px 0;
+    font-size: 25px;
+    text-align: left;
 }
 .bookingtitle,.bookingUrl,.duration{
     display:flex;
@@ -42,7 +43,7 @@
 }
 .bookingtitle input,.bookingdescription textarea,.bookingUrl input{
     width:100%;
-    padding:10px;
+    padding:19px;
     border:none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -65,7 +66,6 @@
     background-color: white;
     padding:30px 0;
     border-bottom: 1px solid grey;
-
 }
 .Cancel{
     padding:10px;
@@ -80,4 +80,54 @@
     border: none;
     border-radius: 4px;
 }
+.question{
+    width:100%;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.availibility{
+    display: flex;
+    padding:20px;
+    gap:5px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.weeklymsg{
+    width:100%;
+    padding:20px 0;
+
+}
+.days{
+    width:100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding:5px;
+    background-color: white;
+
+}
+.days div{
+    padding:34px;
+    display:flex;
+    gap:5px;
+    border-bottom:1px solid grey;
+    background-color: white;
+}
+.unavailabledays{
+    width:100%;
+    background-color: white;
+    margin-top: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding:5px;
+    border-radius:5px;
+}
+.unavailabledays span{
+    margin-left:10px;
+}
+.unavailabledays p{
+    /* margin-top:10px; */
+    font-size:12px;
+    color:grey;
+}
+
 
