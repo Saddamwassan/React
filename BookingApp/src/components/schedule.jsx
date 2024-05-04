@@ -19,10 +19,10 @@ function Schedule() {
     </td>
     <td className='statuscontainer'>
     <p className='status'>scheduled</p>
-    <Link>
+    <Link style={{ textDecoration: 'none' }}>
     <p className='cancel'>cancel</p>
     </Link>
-    <Link>
+    <Link style={{ textDecoration: 'none' }}>
     <p className='reschedule'>Reschedule</p>
     </Link>
     </td>

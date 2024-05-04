@@ -42,7 +42,6 @@
 }
 .barslogo{
     display:none;
-
 }
 /* dashboard body  */
 .dbody{
@@ -129,7 +128,7 @@
         font-size: 15px;
     }
     .barslogo{
-        color:white;
+        color:black;
         font-size:18px;
         display:block;
     }

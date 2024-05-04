@@ -129,5 +129,20 @@
     font-size:12px;
     color:grey;
 }
-
+/* for mobile  */
+@media (max-width:768px) and (min-width:425px){
+    .bookingform{
+        width:345px;
+    }
+}
+/* for mobile below 425  */
+@media (max-width:424px) and (min-width:375px){
+    .bookingform{
+        width:345px;
+    }
+    .bookingform h3 {
+        padding: 8px 0;
+        font-size:22px;
+    }
+}
 
