@@ -13,14 +13,29 @@ function Nav() {
         <Link to="/dashboard">Booking Cards</Link>
         <Link to="/myschedules">My schedules</Link>
         <Link to="/profile">Profile</Link>
-        <i className ="fa-solid fa-bars barslogo"></i>
+        <i className ="fa-solid fa-bars barslogo" onClick={()=>{setMenu(isShowMenu=>!isShowMenu)}}></i>
       </div>
       {/* //  mobile menu  */}
-    <div className="menu" onClick={()=>{setMenu(isShowMenu=>!isShowMenu)}}>
+      {
+        isMenu
+        ?
+        <div className="menu" >
+          <div className="close">
+            <span>
+              Sidebar
+            </span>
+            <i className="fa fa-xmark cross" onClick={()=>{isMenu && setMenu(isShowMenu=>!isShowMenu)}}></i>
+          </div>
         <Link to="/dashboard">Booking Cards</Link>
         <Link to="/myschedules">My schedules</Link>
         <Link to="/profile">Profile</Link>
+        <Link to="/logout">Logout</Link>
+
     </div>
+    :
+    null
+      }
+    
     </div>
     
   )

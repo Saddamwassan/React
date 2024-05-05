@@ -1,9 +1,9 @@
 import React from 'react'
 
-function input(props) {
+function Input({className}) {
   return (
-    <input type="text" placeholder={props.placeholder} />
-)
+    <input type="text" className={className}/>
+ )
 }
 
-export default input
+export default Input
