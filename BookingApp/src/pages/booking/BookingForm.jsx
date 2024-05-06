@@ -1,53 +1,54 @@
-import React from 'react'
-import '../styles/bookingform.css'
-import Nav from './nav' 
-import Editor from './Editor'
-import CKEditor from '@ckeditor/ckeditor5-react';
+import './bookingform.css'
+import Nav from '../../components/dashboard/nav' 
+// import Editor from '../Editor'
+
+import React, { Component } from 'react';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import Button from './buttons/Button';
+
+import Button from '../../components/buttons/Button';
 function BookingForm() {
   return (
     <>
     <Nav />
-    <div className="bookingdiv">
+    <div className="bookingcontainer">
       <div className="bookingform">
       <h3>Book your meeting</h3>
       {/* title  */}
-      <div className='bookingtitle'>
+      <div className='row'>
       <label htmlFor="title" >Title</label>
       <input type="text" placeholder='title' />
       </div>
       {/* url  */}
-      <div className="bookingUrl">
+      <div className="row">
       <label htmlFor="url">Url</label>
       <input type="text" placeholder='url'/>
       </div>
       {/* description  */}
-      <div className='bookingdescription'                                                                           >
+      {/* <div className='bookingdescription'                                                                           >
       <label htmlFor="description">Description</label>
       <textarea name="description" id="" cols="30" rows="10"></textarea>
-      </div>
+      </div> */}
       {/* editor  */}
-      {/* <CKEditor
-                    editor={ ClassicEditor }
-                    data="<p>Hello from CKEditor 5!</p>"
-                    onInit={ editor => {
-                        // You can store the "editor" and use when it is needed.
-                        console.log( 'Editor is ready to use!', editor );
-                    } }
-                    onChange={ ( event, editor ) => {
-                        const data = editor.getData();
-                        console.log( { event, editor, data } );
-                    } }
-                    onBlur={ ( event, editor ) => {
-                        console.log( 'Blur.', editor );
-                    } }
-                    onFocus={ ( event, editor ) => {
-                        console.log( 'Focus.', editor );
-                    } }
-                /> */}
+      <div className='ckeditorStyle'> 
+    <CKEditor
+        editor={ClassicEditor}
+        data="<p>Hello World</p>"
+        
+        // onReady={editor => {
+        //     console.log(editor)
+        // }}
+        // onChange={(event, editor) => {
+        //     console.log(editor.getData())
+        // }}
+
+        onBlur={(event, editor) => {}}
+
+        onFocus={(event, editor) => {}}
+    />
+</div>
                 {/* add booking button  */}
-                <div className="button">
+                <div className="row">
                   <Button type="Cancel" className="Cancel"/>
                   <Button type="Add booking" className="Add_booking"/>
                 </div>
@@ -105,7 +106,7 @@ function BookingForm() {
         <div className="button">
                   <Button type="Cancel" className="Cancel"/>
                   <Button type="Add booking" className="Add_booking"/>
-                </div>
+        </div>
       </div>
       
       </div>

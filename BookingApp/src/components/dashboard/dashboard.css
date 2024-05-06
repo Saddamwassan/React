@@ -35,7 +35,7 @@
 }
 .nav a{
     text-decoration:none;
-    color:#0060A4;
+    color:#088ae7;
     padding:10px;
     font-size:17px;
 }
@@ -56,6 +56,8 @@
     display:flex;
     justify-content: space-between;
     padding:10px; 
+    border-bottom:1px solid gray;
+
 }
 /* dashboard body  */
 .dbody{
@@ -187,7 +189,10 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid grey;
+    border-radius: 4px;
 }
 .menu a{
     font-size:14px;
+    border-bottom:1px solid gray;
 }

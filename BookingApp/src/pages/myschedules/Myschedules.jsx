@@ -1,8 +1,8 @@
 import React from 'react'
-import Nav from './nav'
+import Nav from '../../components/dashboard/nav'
 // import bookingData from "./mydata"
 import Schedule from './schedule'
-import "../styles/schedule.css"
+import "./schedule.css"
 
 
 

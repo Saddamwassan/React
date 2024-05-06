@@ -1,9 +1,10 @@
 import React from 'react'
-import Nav from './nav'
-import '../styles/profile.css'
-import image from '../assets/profile.jpg'
+import Nav from '../../components/dashboard/nav'
+import './profile.css'
+import image from '../../assets/profile.jpg'
 import { Link } from 'react-router-dom'
-import Input from './input'
+import Input from '../../components/input'
+import Button from '../../components/buttons/Button'
 
 function Profile() {
   return (
@@ -12,15 +13,15 @@ function Profile() {
     <div className='profile'>
     <h1>Settings</h1>
     <img src={image} alt="profile" className='profilepic' />
-    <Link className='profilelink'>change profile picture</Link>
+    <Link className='profilelink'>Change profile picture</Link>
     {/* username  */}
       <div className='username'>
-      <label htmlFor="Your name:" >Your name</label>
+      <label htmlFor="Your name:">Your name:</label>
       <Input className='input'/>
       </div>
        {/* email  */}
        <div className='username'>
-      <label htmlFor="Your email:" >Your email</label>
+      <label htmlFor="Your email:" >Your email:</label>
       <Input className='input'/>
       </div>
       {/* ti  */}
@@ -31,6 +32,12 @@ function Profile() {
         <option value="24">24</option>
       </select>
       </div>
+      {/* booking page title  */}
+      <div className='username'>
+      <label htmlFor="" >Booking page title:</label>
+      <Input className='input'/>
+      </div>
+      <Button type='save data' className='savebtn'/>
     </div>
     </>
   )

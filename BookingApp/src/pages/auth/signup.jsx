@@ -1,4 +1,5 @@
 import React from "react"
+import './signup.css'
 function Signup() {
   return (
     <form action="#" className="signupform">

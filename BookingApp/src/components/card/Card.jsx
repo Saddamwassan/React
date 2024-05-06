@@ -1,5 +1,5 @@
 import React ,{useState}from 'react'
-import "../styles/card.css"
+import "./card.css"
 import {Link} from 'react-router-dom'
 function Card({data}) {
   const[isOn,setStatus] = useState(false);

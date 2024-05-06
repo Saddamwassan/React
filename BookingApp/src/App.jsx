@@ -1,11 +1,11 @@
 import React from "react"
 import './styles/App.css'
-import Auth from "./components/Auth"
+import Auth from "./pages/auth/Auth"
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
-import Myschedules from "./components/Myschedules"
-import Profile from "./components/Profile"
-import Dashboard from "./components/dashboard"
-import BookingForm from "./components/BookingForm"
+import Myschedules from "./pages/myschedules/Myschedules"
+import Profile from "./pages/profile/Profile"
+import Dashboard from "./components/dashboard/dashboard"
+import BookingForm from "./pages/booking/BookingForm"
 export default function App(){
   const router = createBrowserRouter([
     {

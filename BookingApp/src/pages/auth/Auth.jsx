@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Signup from './signup'
-import image from '../assets/signup.jpg'
+import image from '../../assets/signup.jpg'
 import Login from './login';
 
 function Auth() {

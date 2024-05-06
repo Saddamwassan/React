@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import "../styles/dashboard.css"
-import logo from "../assets/logo.jpg"
+import "./dashboard.css"
+import logo from "../../assets/logo.jpg"
 import { Link } from 'react-router-dom'
 function Nav() {
   const[isMenu,setMenu] = useState(false);
@@ -35,7 +35,6 @@ function Nav() {
     :
     null
       }
-    
     </div>
     
   )
