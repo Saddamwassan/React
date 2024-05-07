@@ -1,3 +1,6 @@
+:root{
+    --border:1px solid #CCCED1;
+}
 *{
     margin:0;
     padding:0;
@@ -7,6 +10,7 @@
 .ckeditorStyle{
     width:100%;
     height: 60%;
+    padding:17px 0;
 }
 .ckpara{
     height:200px;
@@ -29,6 +33,7 @@
     align-items: center;
     padding:90px 0;
     width: 550px;
+    margin: auto;
 }
 .bookingform h3{
     text-align: left;
@@ -42,9 +47,26 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding:20px 0;
+    padding:17px 0;
     gap:5px;
 }
+.row input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border: var(--border);
+}
+/* btnrow 1
+*/
+.btnrow{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding:10px 0;
+    border-bottom: var(--border);
+} 
 .bookingdescription{
     padding:20px 0 0;
     display:flex;
@@ -52,7 +74,7 @@
     flex-direction: column;
     width: 100%;
     gap:5px;
-    border-bottom: 1px solid grey;
+    border-bottom: var(--border);
 }
 .bookingtitle input,.bookingdescription textarea,.bookingUrl input{
     width: 100%;
@@ -61,17 +83,16 @@
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
     outline: none;
-    border: 1px solid grey;
+    border: var(--border);
 }
-.duration input{
+.durationinput{
     padding: 10px;
     border: none;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
     outline: none;
     width: 100px;
     margin-right: 10px;
-    border: 1px solid grey;
+    border: var(--border);
 }
 /* buttons  */
 .button{
@@ -80,7 +101,7 @@
     justify-content: flex-end;
     background-color: white;
     padding:10px 0;
-    border-bottom: 1px solid grey;
+    border-bottom: var(--border);
 }
 .Cancel{
     padding:10px;
@@ -107,7 +128,7 @@
     background-color: white;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
-    border: 1px solid grey;
+    border: var(--border);
 
 }
 .weeklymsg{
@@ -115,20 +136,25 @@
     padding:20px 0;
 
 }
-.days{
+.rowdays{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
     width: 100%;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
     padding: 5px;
     background-color: white;
-    border: 1px solid grey;
+    border: var(--border);
 }
-.days div{
+
+.rowdays div{
     padding:34px;
     display:flex;
     gap:5px;
-    border-bottom:1px solid grey;
+    border-bottom:var(--border);
     background-color: white;
+}
+.row label{
+    font-weight:bold;
 }
 .unavailabledays{
     width:100%;
@@ -137,7 +163,7 @@
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
     padding:5px;
     border-radius:5px;
-    border:1px solid grey;
+    border:var(--border);
 }
 .unavailabledays span{
     margin-left:10px;
