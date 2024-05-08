@@ -15,7 +15,6 @@
 .ckpara{
     height:200px;
 }
-
 .ck.ck-editor__editable {
     border-radius: 10px;
 }
@@ -32,7 +31,7 @@
     justify-content: center;
     align-items: center;
     padding:90px 0;
-    width: 550px;
+    width: 730px;
     margin: auto;
 }
 .bookingform h3{
@@ -53,7 +52,7 @@
 .row input{
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     outline: none;
     border: var(--border);
 }
@@ -88,9 +87,8 @@
 .durationinput{
     padding: 10px;
     border: none;
-    border-radius: 5px;
     outline: none;
-    width: 100px;
+    width: 100px;    
     margin-right: 10px;
     border: var(--border);
 }
@@ -110,11 +108,11 @@
     border: none;
 }
 .Add_booking{
-    padding:5px;
     background-color: rgb(0, 123, 255);
     color:white;
     border: none;
     border-radius: 4px;
+    width: 130px
 }
 .question{
     width:100%;
@@ -124,12 +122,21 @@
 .availibility{
     display: flex;
     padding:20px;
-    gap:5px;
+    justify-content: space-around;
     background-color: white;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
-    border-radius: 5px;
+    border-radius: 2px;
     border: var(--border);
-
+    width: 100%;
+}
+.availibility div{
+    padding:20px;
+}
+.availibility div span{
+    padding-left:5px;
+}
+.availibility div p{
+    color:grey;
 }
 .weeklymsg{
     width:100%;
@@ -140,7 +147,7 @@
     display:grid;
     grid-template-columns: repeat(3,1fr);
     width: 100%;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
     background-color: white;
     border: var(--border);
@@ -170,17 +177,24 @@
 }
 .unavailabledays p{
     /* margin-top:10px; */
-    font-size:12px;
+    font-size:11px;
     color:grey;
+
 }
 /* for mobile  */
 @media (max-width:768px) and (min-width:425px){
+    .rowdays{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .bookingform{
         width:345px;
     }
 }
 /* for mobile below 425  */
 @media (max-width:424px) and (min-width:375px){
+    .rowdays{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .bookingform{
         width:345px;
     }

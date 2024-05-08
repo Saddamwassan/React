@@ -13,7 +13,7 @@ function Myschedules() {
     <div className='myschedule'>
       <h3>My Bookings</h3>
         {/* labels  */}
-        <table>
+        <table className='tablerow'>
           <tr>
             <td>
             <span>Day</span>

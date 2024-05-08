@@ -8,7 +8,9 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 import Button from '../../components/buttons/Button';
 import Footer from '../../components/dashboard/Footer';
+
 function BookingForm() {
+ 
   return (
     <>
       <Nav />
@@ -30,7 +32,7 @@ function BookingForm() {
             <CKEditor
               editor={ClassicEditor}
               data="<p>Hello World</p>"
-
+             
               // onReady={editor => {
               //     console.log(editor)
               // }}
@@ -58,17 +60,18 @@ function BookingForm() {
           </div>
           <div className="row">
           <p>When will you be available for this meeting?</p>
-
           </div>
           <div className="availibility">
             {/* weekly  */}
             <div>
               <input type="radio" name='date' value="weekly" />
+              <span>Weekly</span>
               <p>you are available for weekly meeting.</p>
             </div>
             {/* specific date  */}
             <div>
               <input type="radio" name='date' value="specific date" />
+              <span>Specific dates</span>
               <p>you are available for specific date.</p>
             </div>
           </div>
