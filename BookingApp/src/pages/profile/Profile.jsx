@@ -5,7 +5,7 @@ import image from '../../assets/profile.jpg'
 import { Link } from 'react-router-dom'
 import Input from '../../components/input'
 import Button from '../../components/buttons/Button'
-
+import Footer from '../../components/dashboard/Footer'
 function Profile() {
   return (
     <>
@@ -39,6 +39,7 @@ function Profile() {
       </div>
       <Button type='save data' className='savebtn'/>
     </div>
+    <Footer />
     </>
   )
 }

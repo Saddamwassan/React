@@ -28,7 +28,9 @@ function BookingForm() {
             <input type="text" placeholder='url' />
           </div>
           {/* editor  */}
-          <div className='ckeditorStyle'>
+          <div className='row'>
+          <label htmlFor="">Description:</label>
+            
             <CKEditor
               editor={ClassicEditor}
               data="<p>Hello World</p>"
@@ -44,11 +46,6 @@ function BookingForm() {
 
               onFocus={(event, editor) => { }}
             />
-          </div>
-          {/* add booking button  */}
-          <div className="btnrow">
-            <Button type="Cancel" className="Cancel" />
-            <Button type="Add booking" className="Add_booking" />
           </div>
           {/* duration  */}
           <div className="row">
@@ -66,13 +63,13 @@ function BookingForm() {
             <div>
               <input type="radio" name='date' value="weekly" />
               <span>Weekly</span>
-              <p>you are available for weekly meeting.</p>
+              <p>You're available for weekly meeting.</p>
             </div>
             {/* specific date  */}
             <div>
               <input type="radio" name='date' value="specific date" />
               <span>Specific dates</span>
-              <p>you are available for specific date.</p>
+              <p>You're available for specific date.</p>
             </div>
           </div>
           <p className='weeklymsg'>Define your weekly availibility below.</p>

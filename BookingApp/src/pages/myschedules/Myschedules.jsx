@@ -3,6 +3,8 @@ import Nav from '../../components/dashboard/nav'
 // import bookingData from "./mydata"
 import Schedule from './schedule'
 import "./schedule.css"
+import Footer from '../../components/dashboard/Footer';
+
 
 
 
@@ -36,6 +38,7 @@ function Myschedules() {
         
         </table>
     </div>
+    <Footer />
     </>
   )
 }

@@ -1,9 +1,8 @@
 import React from "react"
-// import img from "../assets/katie.png"
+import './card.css'
 export default function Card(props){
-    // console.log(props);
     return(
-        <div className="cardDiv">
+        <div className="card">
             <img src={props.img} alt="katie" className="katie"/>
             <div className="ratingDiv">
             <i className="fa-solid fa-star star"></i>
