@@ -1,11 +1,14 @@
 :root{
     --border:1px solid #CCCED1;
 }
+
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
 .ck-editor__editable_inline {
     min-height: 200px;
 }
@@ -58,6 +61,14 @@
     outline: none;
     border: var(--border);
 }
+/* textrow */
+.textrow{
+    width: 100%;
+    padding:27px 0;
+}
+.textrow label{
+    font-weight: bold;
+}
 /* btnrow 1
 */
 .btnrow{
@@ -93,18 +104,21 @@
     padding:10px 0;
     border-bottom: var(--border);
 }
-.Cancel{
+.cancel{
     padding:10px;
     background:none;
     color:rgb(0, 102, 255);
     border: none;
+    margin-right:10px;
 }
-.Add_booking{
-    background-color: rgb(0, 123, 255);
+.cancel:hover{
+    background-color:rgb(7, 107, 214);
     color:white;
-    border: none;
+    text-decoration: none;
     border-radius: 4px;
-    width: 130px
+}
+.cancel:active{
+    outline: 5px solid  rgb(149, 203, 241);
 }
 .question{
     width:100%;
@@ -121,6 +135,10 @@
     border: var(--border);
     width: 100%;
 }
+.availibility input{
+    width: 17px;
+    height: 15px;
+}
 .availibility div{
     padding:20px;
 }
@@ -135,28 +153,24 @@
 .weeklymsg{
     width:100%;
     padding:20px 0;
-
 }
-.rowdays{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
+.daystable{
+    border-collapse: collapse;
+    width:100%;
+    border:var(--border);
     border-radius: 2px;
-    padding: 5px;
-    background-color: white;
-    border: var(--border);
 }
-
-.rowdays div{
-    padding:34px;
-    display:flex;
-    gap:5px;
-    border-bottom:var(--border);
-    background-color: white;
+.daystable tr{
+    border-bottom: var(--border);
 }
-.rowdays input{
+.daystable td{
+    text-align: left;
+    padding:25px;
+}
+.daystable input{
     height: 15px;
     width: 15px;
+    margin-right:5px;
 }
 .row label{
     font-weight:bold;
@@ -164,8 +178,7 @@
 .unavailabledays{
     width:100%;
     background-color: white;
-    margin-top: 5px;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    margin-top: 25px;
     padding:5px;
     border-radius:5px;
 }
@@ -178,7 +191,7 @@
 }
 .unavailabledays p{
     /* margin-top:10px; */
-    font-size:11px;
+    font-size:15px;
     color:grey;
 
 }

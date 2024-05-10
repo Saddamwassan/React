@@ -1,13 +1,12 @@
 import './bookingform.css'
 import Nav from '../../components/dashboard/nav'
-// import Editor from '../Editor'
-
 import React, { Component } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 import Button from '../../components/buttons/Button';
 import Footer from '../../components/dashboard/Footer';
+import { Link } from 'react-router-dom';
 
 function BookingForm() {
  
@@ -55,9 +54,11 @@ function BookingForm() {
               <span>minutes</span>
             </div>
           </div>
-          <div className="row">
-          <p>When will you be available for this meeting?</p>
-          </div>
+          <div className="textrow">
+          <label htmlFor="">
+          When will you be available for this meeting?          
+          </label>
+         </div>
           <div className="availibility">
             {/* weekly  */}
             <div>
@@ -72,30 +73,40 @@ function BookingForm() {
               <p>You're available for specific date.</p>
             </div>
           </div>
-          <p className='weeklymsg'>Define your weekly availibility below.</p>
-          <div className="rowdays">
-            <div>
-              <input type="checkbox" /><span>Sunday</span>
-            </div>
-            <div>
-              <input type="checkbox" /><span>Monday</span>
-            </div>
-            <div>
-              <input type="checkbox" /><span>Tuesday</span>
-            </div>
-            <div>
-              <input type="checkbox" /><span>Wednesday</span>
-            </div>
-            <div>
-              <input type="checkbox" /><span>Thursday</span>
-            </div>
-            <div>
-              <input type="checkbox" /><span>Friday</span>
-            </div>
-            <div>
-              <input type="checkbox" /><span>Saturday</span>
-            </div>
-          </div>
+         <div className="textrow">
+          <label htmlFor="">
+          Define your weekly availibility below.
+          </label>
+         </div>
+          <table className='daystable'>
+              <tr>
+                <td> 
+                      <input type="checkbox" /><span>Sunday</span>
+               </td>
+               <td> 
+                      <input type="checkbox" /><span>Monday</span>
+               </td>
+               <td> 
+                      <input type="checkbox" /><span>Tuesday</span>
+               </td>
+              </tr>
+              <tr>
+                <td> 
+                      <input type="checkbox" /><span>Wednesday</span>
+               </td>
+               <td> 
+                      <input type="checkbox" /><span>Thursday</span>
+               </td>
+               <td> 
+                      <input type="checkbox" /><span>Friday</span>
+               </td>
+              </tr>
+              <tr>
+              <td> 
+                      <input type="checkbox" /><span>Saturday</span>
+               </td>
+              </tr>
+            </table>
           <div className="unavailabledays">
             <div>
               <input type="checkbox" />
@@ -103,7 +114,7 @@ function BookingForm() {
             </div>
             <p>Define specific dates to exclude from your weekly availibility.</p>
             <div className="btnrow">
-              <Button type="Cancel" className="Cancel" />
+              <Link to='#' className='cancel'>cancel</Link>
               <Button type="Add booking" className="Add_booking" />
             </div>
           </div>

@@ -37,7 +37,7 @@ function Profile() {
       <label htmlFor="" >Booking page title:</label>
       <Input className='input'/>
       </div>
-      <Button type='save data' className='savebtn'/>
+      <Button type='save' className='Add_booking'/>
     </div>
     <Footer />
     </>

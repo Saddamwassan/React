@@ -1,13 +1,9 @@
 import React from 'react'
 import Nav from '../../components/dashboard/nav'
 // import bookingData from "./mydata"
-import Schedule from './schedule'
 import "./schedule.css"
 import Footer from '../../components/dashboard/Footer';
-
-
-
-
+import { Link } from 'react-router-dom';
 function Myschedules() {
   return (
     <>
@@ -16,25 +12,53 @@ function Myschedules() {
       <h3>My Bookings</h3>
         {/* labels  */}
         <table className='tablerow'>
+          <thead>
           <tr>
-            <td>
-            <span>Day</span>
-            </td>
-            <td>
-            <span>Duration</span>
-            </td>
-            <td>
-            <span>Meeting Type</span>
-            </td>
-            <td>
-            <span>With</span>
-            </td>
-            <td>
-            <span>status</span>
-            </td>
+            <th>Day</th>
+            <th>Duration</th>
+            <th>Meeting Type</th>
+            <th>With</th>
+            <th>Status</th>
+            <th>Action</th>
           </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className='day'>Day</td>
+              <td className=''>Duration</td>
+              <td className='meetingtype'>Meeting Type</td>
+              <td className='with'>With</td>
+              <td className='status'><button className='statusbtn'>status</button></td>
+              <td className='action'>
+                <Link to='cancel' className='actionbtn'>cancel</Link>
+                <Link to='reschedule' className='actionbtn'>reschedule</Link>
+              </td>
+            </tr>
+            <tr>
+              <td className='day'>Day</td>
+              <td className=''>Duration</td>
+              <td className='meetingtype'>Meeting Type</td>
+              <td className='with'>With</td>
+              <td className='status'><button className='statusbtn'>status</button></td>
+              <td className='action'>
+                <Link to='cancel' className='actionbtn'>cancel</Link>
+                <Link to='reschedule' className='actionbtn'>reschedule</Link>
+              </td>
+            </tr>
+            <tr>
+              <td className='day'>Day</td>
+              <td className=''>Duration</td>
+              <td className='meetingtype'>Meeting Type</td>
+              <td className='with'>With</td>
+              <td className='status'><button className='statusbtn'>status</button></td>
+              <td className='action'>
+                <Link to='cancel' className='actionbtn'>cancel</Link>
+                <Link to='reschedule' className='actionbtn'>reschedule</Link>
+              </td>
+            </tr>
+          </tbody>
           {/* schedules  */}
-              <Schedule />
+              {/* <Schedule /> */}
         
         </table>
     </div>

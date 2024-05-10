@@ -135,11 +135,16 @@ color:grey;
     padding:20px;   
 }
 .editdiv a{
-    text-decoration: none;
+    text-decoration: underline;
+}
+.editdiv a:hover{
+    color:black;
+}
+.editdiv a:active{
+color: green;
 }
 .edit{
     color:#0060A4;
-
 }
 .delete{
     color:red;

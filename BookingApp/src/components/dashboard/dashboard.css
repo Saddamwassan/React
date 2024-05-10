@@ -35,13 +35,13 @@
 }
 .nav a{
     text-decoration:none;
-    color:#088ae7;
+    color:#0B4A6C;
     padding:10px;
     font-size:17px;
 }
 .nav a:hover{
     background-color: white;
-    color:black;
+    color:#257af9;
     border-radius:5px;
 }
 .barslogo{
@@ -98,7 +98,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#0060A4;
     font-size:15px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
