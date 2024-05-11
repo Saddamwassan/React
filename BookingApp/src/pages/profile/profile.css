@@ -16,6 +16,10 @@
     width:500px;
     margin: auto;
 }
+.profile h1{
+    padding:20px 0;
+    width: 100%;
+}
 .profilepic{
     border-radius: 50%;
     width:145px;

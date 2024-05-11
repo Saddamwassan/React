@@ -29,7 +29,6 @@ function BookingForm() {
           {/* editor  */}
           <div className='row'>
           <label htmlFor="">Description:</label>
-            
             <CKEditor
               editor={ClassicEditor}
               data="<p>Hello World</p>"

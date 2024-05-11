@@ -137,15 +137,19 @@ color:grey;
 .editdiv a{
     text-decoration: underline;
 }
-.editdiv a:hover{
-    color:black;
-}
+
 .editdiv a:active{
-color: green;
+color: gold;
 }
 .edit{
-    color:#0060A4;
+    color:#0784de;
+}
+.edit:hover{
+    color:#07568e;
 }
 .delete{
     color:red;
+}
+.delete:hover{
+    color:rgb(202, 8, 8);
 }

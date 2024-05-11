@@ -28,38 +28,13 @@ function Myschedules() {
               <td className=''>Duration</td>
               <td className='meetingtype'>Meeting Type</td>
               <td className='with'>With</td>
-              <td className='status'><button className='statusbtn'>status</button></td>
+              <td className='status'><button className='statusbtn'>scheduled</button></td>
               <td className='action'>
-                <Link to='cancel' className='actionbtn'>cancel</Link>
-                <Link to='reschedule' className='actionbtn'>reschedule</Link>
-              </td>
-            </tr>
-            <tr>
-              <td className='day'>Day</td>
-              <td className=''>Duration</td>
-              <td className='meetingtype'>Meeting Type</td>
-              <td className='with'>With</td>
-              <td className='status'><button className='statusbtn'>status</button></td>
-              <td className='action'>
-                <Link to='cancel' className='actionbtn'>cancel</Link>
-                <Link to='reschedule' className='actionbtn'>reschedule</Link>
-              </td>
-            </tr>
-            <tr>
-              <td className='day'>Day</td>
-              <td className=''>Duration</td>
-              <td className='meetingtype'>Meeting Type</td>
-              <td className='with'>With</td>
-              <td className='status'><button className='statusbtn'>status</button></td>
-              <td className='action'>
-                <Link to='cancel' className='actionbtn'>cancel</Link>
-                <Link to='reschedule' className='actionbtn'>reschedule</Link>
+                <Link to='cancel' className='actioncancel'>cancel</Link>
+                <Link to='reschedule' className='actionreschedule'>reschedule</Link>
               </td>
             </tr>
           </tbody>
-          {/* schedules  */}
-              {/* <Schedule /> */}
-        
         </table>
     </div>
     <Footer />

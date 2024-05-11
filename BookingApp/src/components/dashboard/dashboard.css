@@ -8,6 +8,7 @@
     min-height:100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .nav{
     height:70px;
