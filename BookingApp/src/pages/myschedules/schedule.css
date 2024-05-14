@@ -43,7 +43,7 @@
 .meetingtype,.with{
     color:rgb(0, 102, 255);
 }
-.status{
+.tablerow .status{
     display: flex;
     justify-content: center;
 }

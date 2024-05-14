@@ -41,24 +41,44 @@
     font-size:17px;
 }
 .nav a:hover{
-    background-color: white;
     color:#257af9;
-    border-radius:5px;
 }
 .barslogo{
     display:none;
 }
-/* mobile menu  */
-.menu{
-    display:none;
+/* sidebar for mobile  */
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 175px;
+    top: 70px;
+    right: -1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid grey;
+    list-style: none;
 }
+.sidebar a{
+    font-size:14px;
+    background-color: white;
+    width:300px;
+    padding:20px 10px;
+}
+.sidebar a:hover{
+   background-color: #0B4A6C;
+   color:white;
+}
+.sidebar a:active{
+    color:rgba(255, 255, 255, 0.879);
+ }
 /* close sidebar  */
 .close{
     display:flex;
     justify-content: space-between;
     padding:10px; 
     border-bottom:1px solid gray;
-
 }
 /* dashboard body  */
 .dbody{
@@ -177,22 +197,4 @@
     .footer{
         font-size:14px;
     }
-}
-/* menu for mobile  */
-.menu{
-    position: fixed;
-    height: 55%;
-    width: 140px;
-    top: 70px;
-    right: 0;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    border: 1px solid grey;
-    border-radius: 4px;
-}
-.menu a{
-    font-size:14px;
-    border-bottom:1px solid gray;
 }

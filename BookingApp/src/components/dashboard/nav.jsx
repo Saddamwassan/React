@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import "./dashboard.css"
 import logo from "../../assets/logo.jpg"
 import { Link } from 'react-router-dom'
 function Nav() {
-  const[isMenu,setMenu] = useState(false);
+  const [isSidebar, setSidebar] = useState(false);
   return (
     <div className='nav'>
       <div className="left">
@@ -15,30 +15,26 @@ function Nav() {
         <Link to="/profile">Profile</Link>
         <Link to="/logout"><i class="fa-solid fa-right-from-bracket"></i></Link>
 
-        <i className ="fa-solid fa-bars barslogo" onClick={()=>{setMenu(isShowMenu=>!isShowMenu)}}></i>
+        <i className="fa-solid fa-bars barslogo" onClick={() => { setSidebar(isShowSidebar => !isShowSidebar) }}></i>
       </div>
-      {/* //  mobile menu  */}
+      {/* //  mobile Sidebar  */}
       {
-        isMenu
-        ?
-        <div className="menu" >
-          <div className="close">
-            <span>
-              Sidebar
-            </span>
-            <i className="fa fa-xmark cross" onClick={()=>{isMenu && setMenu(isShowMenu=>!isShowMenu)}}></i>
-          </div>
-        <Link to="/dashboard">Booking Cards</Link>
-        <Link to="/myschedules">My schedules</Link>
-        <Link to="/profile">Profile</Link>
-        <Link to="/logout">Logout</Link>
-
-    </div>
-    :
-    null
+        isSidebar
+          ?
+            <ul className='sidebar'>
+                <Link to="/dashboard">Booking Cards</Link>
+              <hr />
+                <Link to="/myschedules">My schedules</Link>
+              <hr />
+                <Link to="/profile">Profile</Link>
+              <hr />
+                <Link to="/logout">Logout</Link>
+            </ul>
+          :
+          null
       }
     </div>
-    
+
   )
 }
 

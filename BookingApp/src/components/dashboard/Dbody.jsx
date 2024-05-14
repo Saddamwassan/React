@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from '../card/Card'
-// import "../styles/dashboard.css" 
 import cardDetail from "../mydata"
 import { Link } from 'react-router-dom'
 function Dbody() {
