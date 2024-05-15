@@ -4,7 +4,8 @@ import Nav from '../../components/dashboard/nav'
 import "./schedule.css"
 import Footer from '../../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
-function Myschedules() {
+import data from '../../components/mydata';
+function Myschedules(){
   return (
     <>
     <Nav/>
@@ -23,17 +24,22 @@ function Myschedules() {
           </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className='day'>Day</td>
-              <td className=''>Duration</td>
-              <td className='meetingtype'>Meeting Type</td>
-              <td className='with'>With</td>
-              <td className='status'><button className='statusbtn'>scheduled</button></td>
-              <td className='action'>
-                <Link to='cancel' className='actioncancel'>cancel</Link>
-                <Link to='reschedule' className='actionreschedule'>reschedule</Link>
-              </td>
-            </tr>
+            {
+               data.map((item)=>
+                <tr>
+                  <td className='day'>{item.day}</td>
+                  <td className=''>{item.description}</td>
+                  <td className='meetingtype'>{item.type}</td>
+                  <td className='with'>{item.with}</td>
+                  <td className='status'><button className='statusbtn'>{item.status}</button></td>
+                  <td className='action'>
+                    <Link to='cancel' className='actioncancel'>cancel</Link>
+                    <Link to='reschedule' className='actionreschedule'>reschedule</Link>
+                  </td>
+                </tr>
+              )
+            }
+            
           </tbody>
         </table>
     </div>

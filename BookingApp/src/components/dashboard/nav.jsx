@@ -21,15 +21,24 @@ function Nav() {
       {
         isSidebar
           ?
-            <ul className='sidebar'>
-                <Link to="/dashboard">Booking Cards</Link>
-              <hr />
-                <Link to="/myschedules">My schedules</Link>
-              <hr />
-                <Link to="/profile">Profile</Link>
-              <hr />
-                <Link to="/logout">Logout</Link>
-            </ul>
+          <ul className='sidebar'>
+            <Link to="/dashboard">
+            <i class="fa-solid fa-book-bookmark"></i>
+              Booking Cards
+            </Link>
+            <Link to="/myschedules">
+            <i class="fa-solid fa-calendar-days"></i>
+              myschedules
+            </Link>
+            <Link to="/profile">
+              <i class="fa-regular fa-user"></i>
+              Profile
+            </Link>
+            <Link to="/logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              logout
+            </Link>
+          </ul>
           :
           null
       }
