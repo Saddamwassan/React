@@ -6,6 +6,7 @@ import Myschedules from "./pages/myschedules/Myschedules"
 import Profile from "./pages/profile/Profile"
 import Dashboard from "./components/dashboard/dashboard"
 import BookingForm from "./pages/booking/BookingForm"
+import Alert from "./components/dashboard/Alert"
 export default function App(){
   const router = createBrowserRouter([
     {
@@ -27,7 +28,12 @@ export default function App(){
     {
       path:'/bookingform',
       element:<BookingForm />
+    },
+    {
+      path:'/alertbox',
+      element:<Alert/>
     }
+
   ])
   return(
     <div className="myApp">

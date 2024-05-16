@@ -7,7 +7,7 @@ export default[
        description:` Meet me in next 30 mins.`,
        type:'Business',
        with:"saqib",
-       status:"On",
+       status:true,
     },
     {
       title:"Minutes Meeting",
@@ -17,7 +17,7 @@ export default[
         description: "we will have a talk about our new project." ,
        type:'Discussion',
        with:"ahmed",
-       status:"On",
+       status:false,
      },
      {
         title:"Minutes Meeting",
@@ -25,9 +25,9 @@ export default[
         duration:40,
         day:"Saturday",
         description: "School meeting." ,
-       type:'Gupshup',
-       with:"Ali",
-       status:"Off",
+        type:'Gupshup',
+        with:"Ali",
+        status:false,
      },
      {
         title:"Minutes Meeting",
@@ -35,9 +35,9 @@ export default[
         duration:50,
         day:"Saturday",
         description: "Vacation workshop meeting" ,
-       type:'Job',
-       with:"Talha",
-       status:"On",
+        type:'Job',
+        with:"Talha",
+        status:true,
      },
      {
         title:"Minutes Meeting",
@@ -47,7 +47,7 @@ export default[
         description: "Business Meeting" ,
        type:'School',
        with:"Shahmir",
-       status:"Off",
+       status:false,
      },
 
 ]

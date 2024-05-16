@@ -28,10 +28,10 @@ function Myschedules(){
                data.map((item)=>
                 <tr>
                   <td className='day'>{item.day}</td>
-                  <td className=''>{item.description}</td>
+                  <td className=''>{item.duration} minutes</td>
                   <td className='meetingtype'>{item.type}</td>
                   <td className='with'>{item.with}</td>
-                  <td className='status'><button className='statusbtn'>{item.status}</button></td>
+                  <td className='status'><div className='statusbtn'>{item.status?"on":"off"}</div></td>
                   <td className='action'>
                     <Link to='cancel' className='actioncancel'>cancel</Link>
                     <Link to='reschedule' className='actionreschedule'>reschedule</Link>
