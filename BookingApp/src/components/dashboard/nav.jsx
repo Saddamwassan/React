@@ -13,7 +13,7 @@ function Nav() {
         <Link to="/dashboard">Booking Cards</Link>
         <Link to="/myschedules">My schedules</Link>
         <Link to="/profile">Profile</Link>
-        <Link to="/logout"><i class="fa-solid fa-right-from-bracket"></i></Link>
+        <Link to="/"><i class="fa-solid fa-right-from-bracket"></i></Link>
 
         <i className="fa-solid fa-bars barslogo" onClick={() => { setSidebar(isShowSidebar => !isShowSidebar) }}></i>
       </div>

@@ -4,7 +4,7 @@ import image from '../../assets/signup.jpg'
 import Login from './login';
 
 function Auth() {
-    const [isLogin, setLogin] = useState(false);
+    const [isLogin, setLogin] = useState(true);
     return (
         <div className="SignUpDiv">
             <div className="signupinner">

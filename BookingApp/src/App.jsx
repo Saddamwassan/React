@@ -7,6 +7,8 @@ import Profile from "./pages/profile/Profile"
 import Dashboard from "./components/dashboard/dashboard"
 import BookingForm from "./pages/booking/BookingForm"
 import Alert from "./components/dashboard/Alert"
+import Edit from "./pages/Edit"
+import Login from "./pages/auth/login"
 export default function App(){
   const router = createBrowserRouter([
     {
@@ -31,9 +33,16 @@ export default function App(){
     },
     {
       path:'/alertbox',
-      element:<Alert/>
+      element:<Alert />
+    },
+    {
+      path:'/editpage',
+      element:<Edit />
+    },
+    {
+      path:'/auth',
+      element:<Auth />
     }
-
   ])
   return(
     <div className="myApp">

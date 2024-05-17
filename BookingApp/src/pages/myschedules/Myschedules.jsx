@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from '../../components/dashboard/nav'
-// import bookingData from "./mydata"
 import "./schedule.css"
 import Footer from '../../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
@@ -29,7 +28,7 @@ function Myschedules(){
                 <tr>
                   <td className='day'>{item.day}</td>
                   <td className=''>{item.duration} minutes</td>
-                  <td className='meetingtype'>{item.type}</td>
+                  <td className='meetingtype'>{item.title}</td>
                   <td className='with'>{item.with}</td>
                   <td className='status'><div className='statusbtn'>{item.status?"on":"off"}</div></td>
                   <td className='action'>

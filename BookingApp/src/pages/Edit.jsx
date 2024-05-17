@@ -1,21 +1,20 @@
-import './bookingform.css'
-import Nav from '../../components/dashboard/nav'
+import './booking/bookingform.css';
+import Nav from '../components/dashboard/nav';
 import React, { Component } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
-import Button from '../../components/buttons/Button';
-import Footer from '../../components/dashboard/Footer';
+import data from '../components/mydata';
+import Button from '../components/buttons/Button';
+import Footer from '../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
 
-function BookingForm() {
- 
+function Edit(){
   return (
     <>
       <Nav />
       <div className="bookingcontainer">
         <div className="bookingform">
-          <h3>Book your meeting</h3>
+          <h3>Update Booking Type </h3>
           {/* title  */}
           <div className='row'>
             <label htmlFor="title" >Title:</label>
@@ -32,16 +31,7 @@ function BookingForm() {
             <CKEditor
               editor={ClassicEditor}
               data="<p>Hello World</p>"
-             
-              // onReady={editor => {
-              //     console.log(editor)
-              // }}
-              // onChange={(event, editor) => {
-              //     console.log(editor.getData())
-              // }}
-
               onBlur={(event, editor) => { }}
-
               onFocus={(event, editor) => { }}
             />
           </div>
@@ -125,4 +115,4 @@ function BookingForm() {
   )
 }
 
-export default BookingForm
+export default Edit

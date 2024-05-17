@@ -15,7 +15,7 @@ function BookingForm() {
       <Nav />
       <div className="bookingcontainer">
         <div className="bookingform">
-          <h3>Book your meeting</h3>
+          <h3>Book Your Meeting</h3>
           {/* title  */}
           <div className='row'>
             <label htmlFor="title" >Title:</label>
