@@ -6,7 +6,17 @@ import { Link } from 'react-router-dom'
 import Input from '../../components/input'
 import Button from '../../components/buttons/Button'
 import Footer from '../../components/dashboard/Footer'
+import Swal from 'sweetalert2'
 function Profile() {
+  const alert = ()=>{
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your Profile is updated!",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  }
   return (
     <>
     <Nav />
@@ -17,27 +27,19 @@ function Profile() {
     {/* username  */}
       <div className='username'>
       <label htmlFor="Your name:">Your name:</label>
-      <Input className='input'/>
+      <Input className='input' placeholder="Name" value="Saddam Hussain"/>
       </div>
        {/* email  */}
        <div className='username'>
       <label htmlFor="Your email:" >Your email:</label>
-      <Input className='input'/>
+      <Input className='input'placeholder="Email" value="Saddam.wassan1@gmail.com"/>
       </div>
-      {/* ti  */}
+      {/* password */}
       <div className='username'>
-      <label htmlFor="Yourtimeformat:" >Time format:</label>
-      <select name="timeformat" id="timeformat" className='input'>
-        <option value="12">12</option>
-        <option value="24">24</option>
-      </select>
+      <label htmlFor="Your password:" >Your password:</label>
+      <input type="text" className='input' value='mypassword' />
       </div>
-      {/* booking page title  */}
-      <div className='username'>
-      <label htmlFor="" >Booking page title:</label>
-      <Input className='input'/>
-      </div>
-      <Button type='save' className='Add_booking'/>
+      <Button type='save' className='Add_booking' onClick={alert}/>
     </div>
     <Footer />
     </>

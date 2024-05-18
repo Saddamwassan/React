@@ -4,7 +4,27 @@ import "./schedule.css"
 import Footer from '../../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
 import data from '../../components/mydata';
+import Swal from 'sweetalert2';
 function Myschedules(){
+  const alert = ()=>{
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You want to cancel this meeting!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your card has been deleted.",
+          icon: "success"
+        });
+      }
+    });
+  }
   return (
     <>
     <Nav/>
@@ -32,8 +52,8 @@ function Myschedules(){
                   <td className='with'>{item.with}</td>
                   <td className='status'><div className='statusbtn'>{item.status?"on":"off"}</div></td>
                   <td className='action'>
-                    <Link to='cancel' className='actioncancel'>cancel</Link>
-                    <Link to='reschedule' className='actionreschedule'>reschedule</Link>
+                    <Link to='#' className='actioncancel' onClick={alert}>cancel</Link>
+                    <Link to='/editpage' className='actionreschedule'>reschedule</Link>
                   </td>
                 </tr>
               )

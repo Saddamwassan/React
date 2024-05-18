@@ -9,7 +9,14 @@ import Footer from '../../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
 
 function BookingForm() {
- 
+  // setter 
+  const setter = ()=>{
+
+  }
+  // getter 
+  const getter = ()=>{
+    
+  }
   return (
     <>
       <Nav />

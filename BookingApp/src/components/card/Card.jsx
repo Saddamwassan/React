@@ -24,12 +24,17 @@ function Card({ data }) {
     });
     
   }
+  // const copyLink = ()=>{
+    
+  // }
+ 
+
   const [isOn, setStatus] = useState(false);
   return (
     <div className='card'>
       <h3>{`${data.duration} ${data.title}`}</h3>
       <div className="linkdiv">
-        <Link to="#" className='linkitself'>{data.link}</ Link>
+        <span className='linkitself'>{data.link}</ span>
         <Link to="#" className='copylink'>copy link</Link>
       </div>
       {/* booking status  */}
