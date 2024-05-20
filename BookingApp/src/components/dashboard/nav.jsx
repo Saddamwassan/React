@@ -13,7 +13,7 @@ function Nav() {
         <Link to="/dashboard">Booking Cards</Link>
         <Link to="/myschedules">My schedules</Link>
         <Link to="/profile">Profile</Link>
-        <Link to="/"><i class="fa-solid fa-right-from-bracket"></i></Link>
+        <Link to="/"><i className="fa-solid fa-right-from-bracket"></i></Link>
 
         <i className="fa-solid fa-bars barslogo" onClick={() => { setSidebar(isShowSidebar => !isShowSidebar) }}></i>
       </div>
@@ -23,19 +23,19 @@ function Nav() {
           ?
           <ul className='sidebar'>
             <Link to="/dashboard">
-            <i class="fa-solid fa-book-bookmark"></i>
+            <i className="fa-solid fa-book-bookmark"></i>
               Booking Cards
             </Link>
             <Link to="/myschedules">
-            <i class="fa-solid fa-calendar-days"></i>
+            <i className="fa-solid fa-calendar-days"></i>
               myschedules
             </Link>
             <Link to="/profile">
-              <i class="fa-regular fa-user"></i>
+              <i className="fa-regular fa-user"></i>
               Profile
             </Link>
-            <Link to="/logout">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <Link to="/">
+            <i className="fa-solid fa-arrow-right-from-bracket"></i>
               logout
             </Link>
           </ul>

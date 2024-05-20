@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import "./card.css"
 import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
@@ -24,18 +25,16 @@ function Card({ data }) {
     });
     
   }
-  // const copyLink = ()=>{
-    
-  // }
- 
-
   const [isOn, setStatus] = useState(false);
   return (
     <div className='card'>
       <h3>{`${data.duration} ${data.title}`}</h3>
+      {/* link  */}
       <div className="linkdiv">
         <span className='linkitself'>{data.link}</ span>
+        <CopyToClipboard text={data.link}>
         <Link to="#" className='copylink'>copy link</Link>
+        </CopyToClipboard>
       </div>
       {/* booking status  */}
       <div className="statusDiv">

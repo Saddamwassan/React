@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Nav from '../../components/dashboard/nav'
 import './profile.css'
 import image from '../../assets/profile.jpg'
@@ -8,6 +8,8 @@ import Button from '../../components/buttons/Button'
 import Footer from '../../components/dashboard/Footer'
 import Swal from 'sweetalert2'
 function Profile() {
+  const [isShow, setShow] = useState(false);
+  console.log(isShow)
   const alert = ()=>{
     Swal.fire({
       position: "center",
@@ -23,21 +25,30 @@ function Profile() {
     <div className='profile'>
     <h1>Settings</h1>
     <img src={image} alt="profile" className='profilepic' />
-    <Link className='profilelink'>Change profile picture</Link>
+    <label htmlFor="profilepic" className='profilelabel'>Choose Profile Pic</label>
+    <input id ="profilepic" type="file" className='profilelink' />
     {/* username  */}
       <div className='username'>
       <label htmlFor="Your name:">Your name:</label>
-      <Input className='input' placeholder="Name" value="Saddam Hussain"/>
+      <Input className='input' placeholder="Name" />
       </div>
        {/* email  */}
        <div className='username'>
       <label htmlFor="Your email:" >Your email:</label>
-      <Input className='input'placeholder="Email" value="Saddam.wassan1@gmail.com"/>
+      <Input className='input'placeholder="Email" />
       </div>
       {/* password */}
       <div className='username'>
       <label htmlFor="Your password:" >Your password:</label>
-      <input type="text" className='input' value='mypassword' />
+      <div className="password">
+      <input type={isShow?"text":"password"} className='passwordinput' placeholder="Password" />
+      {isShow
+      ?
+      <i class="fa-regular fa-eye-slash" onClick={()=>setShow(false)}></i>
+      :
+      <i className="fa-regular fa-eye" onClick={()=>setShow(true)}></i>
+    }
+      </div>
       </div>
       <Button type='save' className='Add_booking' onClick={alert}/>
     </div>

@@ -59,6 +59,17 @@
     border: 2px solid grey;
     cursor:pointer;
     margin-top: 5px;
+    outline:none;
+  }
+  .signUpWithGoogle:hover{
+    background-color:rgb(3, 121, 224);
+    color:white;
+  }
+  .signUpWithGoogle:active{
+    background-color:rgb(3, 121, 224);
+    color:white;
+    outline:5px solid  rgb(224, 218, 185);
+
   }
   .hrdiv{
     margin-top:10px;
@@ -114,7 +125,10 @@
     width:100%;
   }
   .signupbtn:hover{
-    background-color: black;
+    background-color: #03538b;
+  }
+  .signupbtn:active{
+    outline:5px solid  rgb(149, 203, 241);
   }
   .logindiv{
     display:flex;
@@ -128,6 +142,13 @@
     text-decoration:none;
     margin-left:10px;
     color:#0060A4;
+    text-decoration: underline;
+  }
+  .logindiv a:hover{
+    text-decoration:none;
+    margin-left:10px;
+    color:#024372;
+    text-decoration: underline;
   }
   @media(max-width:830px){
   .image{

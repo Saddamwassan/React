@@ -37,7 +37,9 @@
 }
 .copylink{
     color:#2548f9;
-
+}
+.copylink:hover{
+    color:#1f3cce;
 }
 .statusDiv{
     display:flex;
