@@ -5,6 +5,7 @@ import Footer from '../../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
 import data from '../../components/mydata';
 import Swal from 'sweetalert2';
+import { COLOR } from 'rsuite/esm/utils/constants';
 function Myschedules(){
   const alert = ()=>{
     Swal.fire({
@@ -50,10 +51,10 @@ function Myschedules(){
                   <td className=''>{item.duration} minutes</td>
                   <td className='meetingtype'>{item.title}</td>
                   <td className='with'>{item.with}</td>
-                  <td className='status'><div className='statusbtn'>{item.status?"on":"off"}</div></td>
+                  <td className='status'><div className='statusbtn' style={{}}>{item.status?"Scheduled":"Cancel"}</div></td>
                   <td className='action'>
-                    <Link to='#' className='actioncancel' onClick={alert}>cancel</Link>
-                    <Link to='/editpage' className='actionreschedule'>reschedule</Link>
+                    <Link to='#' className='actioncancel' onClick={alert}>Cancel</Link>
+                    <Link to='/editpage' className='actionreschedule'>Reschedule</Link>
                   </td>
                 </tr>
               )

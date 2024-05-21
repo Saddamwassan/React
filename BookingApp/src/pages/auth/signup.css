@@ -4,6 +4,13 @@
     box-sizing:border-box;
     font-family:sans-serif;
   }
+  .password{
+    /* padding:10px; */
+    border-radius: 4px;
+    border: 2px solid grey;
+    text-decoration:black;
+    width:100%;
+  }
   /* signup page  */
   .SignUpDiv{
     display:flex;

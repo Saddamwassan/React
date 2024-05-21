@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./dashboard.css"
-import logo from "../../assets/logo.jpg"
+import logo from "../../assets/logo.png"
 import { Link } from 'react-router-dom'
 function Nav() {
   const [isSidebar, setSidebar] = useState(false);
@@ -13,8 +13,11 @@ function Nav() {
         <Link to="/dashboard">Booking Cards</Link>
         <Link to="/myschedules">My schedules</Link>
         <Link to="/profile">Profile</Link>
-        <Link to="/"><i className="fa-solid fa-right-from-bracket"></i></Link>
-
+        <Link to="/"><i className="fa-solid fa-right-from-bracket logoutIcon">
+        <span className="tooltiptext">
+          logout
+        </span>
+          </i></Link>
         <i className="fa-solid fa-bars barslogo" onClick={() => { setSidebar(isShowSidebar => !isShowSidebar) }}></i>
       </div>
       {/* //  mobile Sidebar  */}
@@ -43,7 +46,6 @@ function Nav() {
           null
       }
     </div>
-
   )
 }
 

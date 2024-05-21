@@ -6,6 +6,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 import Button from '../../components/buttons/Button';
 import Footer from '../../components/dashboard/Footer';
+import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 
 function BookingForm() {
@@ -16,6 +17,16 @@ function BookingForm() {
   // getter 
   const getter = ()=>{
     
+  }
+  // alert 
+  const alert = ()=>{
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your meeting in booked!",
+      showConfirmButton: false,
+      timer: 1500
+    });
   }
   return (
     <>
@@ -120,8 +131,8 @@ function BookingForm() {
             </div>
             <p>Define specific dates to exclude from your weekly availibility.</p>
             <div className="btnrow">
-              <Link to='#' className='cancel'>cancel</Link>
-              <Button type="Add booking" className="Add_booking" />
+              <Link to='#' className='cancel'>Cancel</Link>
+              <Button type="Add booking" className="Add_booking" onClick={alert}/>
             </div>
           </div>
 

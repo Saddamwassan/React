@@ -1,6 +1,9 @@
-import React from "react"
+import React,{useState} from "react"
 import './signup.css'
 function Signup() {
+  const[isShow, setShow] = useState(false);
+  const[isShowConfirmPass, setShowConfirmPass] = useState(false);
+
   return (
     <form action="#" className="signupform">
     <h1>Signup for Your Account</h1>
@@ -26,12 +29,29 @@ function Signup() {
     <div className="Labeldiv">
     <label htmlFor="">Password*</label>
     </div>
-    <input type="text" placeholder="Create your password" />
+    <div className="password">
+      <input type={isShow?"text":"password"} className='passwordinput' placeholder="Create a password" />
+      {isShow
+      ?
+      <i class="fa-regular fa-eye-slash" onClick={()=>setShow(false)}></i>
+      :
+      <i className="fa-regular fa-eye" onClick={()=>setShow(true)}></i>
+      }
+    </div>
     {/* confirm password  */}
     <div className="Labeldiv">
     <label htmlFor="">Confirm password*</label>
     </div>
-    <input type="text" placeholder="re-enter password" />
+    <div className="password">
+      <input type={isShowConfirmPass?"text":"password"} className='passwordinput' placeholder="Password" />
+      {isShowConfirmPass
+      ?
+      <i class="fa-regular fa-eye-slash" onClick={()=>setShowConfirmPass(false)}></i>
+      :
+      <i className="fa-regular fa-eye" onClick={()=>setShowConfirmPass(true)}></i>
+    }
+      </div>
+    
     <button className="signupbtn"> Sign up</button>
     {/*  hrdiv  */}
     <div className="hrdiv">

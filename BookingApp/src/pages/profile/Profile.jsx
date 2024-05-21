@@ -9,6 +9,7 @@ import Footer from '../../components/dashboard/Footer'
 import Swal from 'sweetalert2'
 function Profile() {
   const [isShow, setShow] = useState(false);
+  const [isShowConfirmPass,setShowConfirmPass] = useState(false);
   console.log(isShow)
   const alert = ()=>{
     Swal.fire({
@@ -29,17 +30,22 @@ function Profile() {
     <input id ="profilepic" type="file" className='profilelink' />
     {/* username  */}
       <div className='username'>
-      <label htmlFor="Your name:">Your name:</label>
+      <label htmlFor="">First Name</label>
+      <Input className='input' placeholder="Name" />
+      </div>
+      {/* last name  */}
+      <div className='username'>
+      <label htmlFor="">Last Name</label>
       <Input className='input' placeholder="Name" />
       </div>
        {/* email  */}
        <div className='username'>
-      <label htmlFor="Your email:" >Your email:</label>
+      <label htmlFor="Your email:" >Email</label>
       <Input className='input'placeholder="Email" />
       </div>
       {/* password */}
       <div className='username'>
-      <label htmlFor="Your password:" >Your password:</label>
+      <label htmlFor="Your password:" >Password</label>
       <div className="password">
       <input type={isShow?"text":"password"} className='passwordinput' placeholder="Password" />
       {isShow
@@ -47,6 +53,20 @@ function Profile() {
       <i class="fa-regular fa-eye-slash" onClick={()=>setShow(false)}></i>
       :
       <i className="fa-regular fa-eye" onClick={()=>setShow(true)}></i>
+    }
+      </div>
+      </div>
+      {/* confirm password  */}
+            {/* password */}
+            <div className='username'>
+      <label htmlFor="Your password:" >Confirm Password</label>
+      <div className="password">
+      <input type={isShowConfirmPass?"text":"password"} className='passwordinput' placeholder="Password" />
+      {isShowConfirmPass
+      ?
+      <i class="fa-regular fa-eye-slash" onClick={()=>setShowConfirmPass(false)}></i>
+      :
+      <i className="fa-regular fa-eye" onClick={()=>setShowConfirmPass(true)}></i>
     }
       </div>
       </div>

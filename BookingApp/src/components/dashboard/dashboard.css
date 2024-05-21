@@ -4,6 +4,24 @@
     box-sizing:border-box;
     font-family: sans-serif;
 }
+/* tooltip */
+.tooltiptext{
+    visibility: hidden;
+    /* color:rgb(152, 150, 150); */
+    /* border:2px solid #257af9; */
+    position:absolute;
+    top:48px;
+    right: 22px;
+    border-radius: 4px;
+    padding:7px;
+    background-color: black;
+    opacity: 0.8;
+    color:white;
+    font-weight:normal;
+}
+.logoutIcon:hover .tooltiptext{
+    visibility: visible;
+}
 .dashboard{
     min-height:100vh;
     display: flex;
@@ -25,11 +43,8 @@
     top: 0;
 
 }
-.left{
-    
-}
 .logo{
-    width:70px;
+    width:170px;
     border-radius: 50%;
 }
 .right{
@@ -37,7 +52,7 @@
 }
 .nav a{
     text-decoration:none;
-    color:#0B4A6C;
+    color:#0149AA;
     padding:10px;
     font-size:17px;
 }
