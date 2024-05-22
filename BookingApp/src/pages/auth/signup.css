@@ -4,6 +4,10 @@
     box-sizing:border-box;
     font-family:sans-serif;
   }
+  .logologin{
+    width:170px;
+    margin-bottom: 15px;
+  }
   .password{
     /* padding:10px; */
     border-radius: 4px;
@@ -40,8 +44,7 @@
   .signupform{
     display: flex;
     flex-direction: column;
-    padding:20px;
-    margin-top:20px ;
+    padding:15px;
     justify-content: center;
     align-items: center;
   }
@@ -141,13 +144,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:5px;
-    gap:10px;
     padding-bottom: 10px;
   }
   .logindiv a{
     text-decoration:none;
-    margin-left:10px;
+    margin-left:5px;
     color:#0060A4;
     text-decoration: underline;
   }

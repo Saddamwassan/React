@@ -1,13 +1,14 @@
 import React,{useState} from "react"
 import './signup.css'
+import logo from '../../assets/logo.png';
 function Signup() {
   const[isShow, setShow] = useState(false);
   const[isShowConfirmPass, setShowConfirmPass] = useState(false);
 
   return (
     <form action="#" className="signupform">
+      <img src={logo} alt="logo" className='logologin' />
     <h1>Signup for Your Account</h1>
-    <p className="welcometxt">Welcome to techVision, Signup to explore more.</p>    
     <div className="namediv">
     {/* firstname  */}
     <div className="firstnamediv">
@@ -33,9 +34,9 @@ function Signup() {
       <input type={isShow?"text":"password"} className='passwordinput' placeholder="Create a password" />
       {isShow
       ?
-      <i class="fa-regular fa-eye-slash" onClick={()=>setShow(false)}></i>
+      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShow(false)}></i>
       :
-      <i className="fa-regular fa-eye" onClick={()=>setShow(true)}></i>
+      <i className="fa-regular fa-eye eyeicon" onClick={()=>setShow(true)}></i>
       }
     </div>
     {/* confirm password  */}
@@ -46,9 +47,9 @@ function Signup() {
       <input type={isShowConfirmPass?"text":"password"} className='passwordinput' placeholder="Password" />
       {isShowConfirmPass
       ?
-      <i class="fa-regular fa-eye-slash" onClick={()=>setShowConfirmPass(false)}></i>
+      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShowConfirmPass(false)}></i>
       :
-      <i className="fa-regular fa-eye" onClick={()=>setShowConfirmPass(true)}></i>
+      <i className="fa-regular fa-eye eyeicon" onClick={()=>setShowConfirmPass(true)}></i>
     }
       </div>
     

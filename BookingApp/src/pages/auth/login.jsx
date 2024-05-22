@@ -1,10 +1,12 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/logo.png'  
 function Login() {
   const[isShow, setShow] = useState(false);
 
   return (
     <form action="#" className="signupform">
+          <img src={logo} alt="logo" className='logologin' />
           <h1>Log in to Your Account</h1>
           <p className="welcometxt">Welcome back to techVision, Good to see you again!</p>
           {/* email  */}
@@ -20,9 +22,9 @@ function Login() {
       <input type={isShow?"text":"password"} className='passwordinput' placeholder="Enter password" />
       {isShow
       ?
-      <i class="fa-regular fa-eye-slash" onClick={()=>setShow(false)}></i>
+      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShow(false)}></i>
       :
-      <i className="fa-regular fa-eye" onClick={()=>setShow(true)}></i>
+      <i className="fa-regular fa-eye eyeicon" onClick={()=>setShow(true)}></i>
       }
     </div>
           <button className="signupbtn"> Log in</button>

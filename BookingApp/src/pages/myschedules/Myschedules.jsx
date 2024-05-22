@@ -51,7 +51,7 @@ function Myschedules(){
                   <td className=''>{item.duration} minutes</td>
                   <td className='meetingtype'>{item.title}</td>
                   <td className='with'>{item.with}</td>
-                  <td className='status'><div className='statusbtn' style={{}}>{item.status?"Scheduled":"Cancel"}</div></td>
+                  <td className='status'><div className='statusbtn' style={{backgroundColor:item.status?'green':'#DC3545'}}>{item.status?"Scheduled":"Cancel"}</div></td>
                   <td className='action'>
                     <Link to='#' className='actioncancel' onClick={alert}>Cancel</Link>
                     <Link to='/editpage' className='actionreschedule'>Reschedule</Link>

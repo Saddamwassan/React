@@ -7,7 +7,7 @@
     box-sizing:border-box;
 }
 thead tr{
-    background-color: rgb(246, 241, 241);
+    background-color: #0149AA;
 }
 .myschedule h3{
     width: 730px;
@@ -21,12 +21,16 @@ thead tr{
     margin-left: auto;
     margin-right: auto;
     width:730px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   }
 .tablerow tr{
     border-bottom: var(--border);
 }
+tbody tr:hover{
+    background-color: rgb(250, 248, 248);
+}
 .tablerow th{
-    color:grey;
+    color:white;
     padding:15px 0;
 
 }
@@ -60,18 +64,21 @@ thead tr{
     font-weight: bold;
 }
 .actioncancel{
-    color:red;
+    color:#DC3545;
     margin-right:5px;
+    font-size: 14px;
 }
 .actioncancel:hover{
-    color:rgb(195, 6, 6);
+    color:#b42d3b;
     margin-right:5px;
 }
 .actionreschedule{
-    color:green;
+    color:#007BFF;
+    font-size: 14px;
+
 }
 .actionreschedule:hover{
-    color:rgb(3, 94, 3);
+    color:#076edc;
 }
 
 @media(max-width:768px){

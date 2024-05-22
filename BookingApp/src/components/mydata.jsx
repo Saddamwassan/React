@@ -14,7 +14,6 @@ export default [
       duration: 30,
       day: "Saturday",
       description: "we will have a talk about our new project.",
-
       with: "ahmed",
       status: false,
    },

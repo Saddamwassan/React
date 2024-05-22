@@ -13,7 +13,11 @@ input[type="file"]{
 display: none;
 }
 .profilelabel{
-    color:#088ae7;
+    color:#007BFF;
+    text-decoration: underline;
+}
+.profilelabel:hover{
+    color:#0777ed;
 }
 .profile{
     padding:100px 0;
@@ -59,6 +63,9 @@ select option:checked{
     outline-color:rgb(87, 124, 199);
     outline-width:thick;
 }
+.username label{
+    font-size:14px;
+}
 .username .password{
     display: flex;
     align-items: center;
@@ -83,6 +90,9 @@ select option:checked{
     border: none;
     border-radius: 4px;
     box-shadow: 0 0 4px rgba( 0, 0, 0, 0.1);
+}
+.eyeicon{
+    color:grey;
 }
 @media(max-height:768px) and (min-height:425px){
     .profile{

@@ -50,9 +50,9 @@ function Profile() {
       <input type={isShow?"text":"password"} className='passwordinput' placeholder="Password" />
       {isShow
       ?
-      <i class="fa-regular fa-eye-slash" onClick={()=>setShow(false)}></i>
+      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShow(false)}></i>
       :
-      <i className="fa-regular fa-eye" onClick={()=>setShow(true)}></i>
+      <i className="fa-regular fa-eye eyeicon" onClick={()=>setShow(true)}></i>
     }
       </div>
       </div>
@@ -64,9 +64,9 @@ function Profile() {
       <input type={isShowConfirmPass?"text":"password"} className='passwordinput' placeholder="Password" />
       {isShowConfirmPass
       ?
-      <i class="fa-regular fa-eye-slash" onClick={()=>setShowConfirmPass(false)}></i>
+      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShowConfirmPass(false)}></i>
       :
-      <i className="fa-regular fa-eye" onClick={()=>setShowConfirmPass(true)}></i>
+      <i className="fa-regular fa-eye eyeicon" onClick={()=>setShowConfirmPass(true)}></i>
     }
       </div>
       </div>
