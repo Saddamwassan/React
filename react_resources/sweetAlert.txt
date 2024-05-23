@@ -1,0 +1,2 @@
+works with react and js both.
+https://sweetalert2.github.io/
