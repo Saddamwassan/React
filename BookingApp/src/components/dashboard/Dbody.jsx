@@ -1,7 +1,8 @@
 import React from 'react'
-import Card from '../card/Card'
 import cardDetail from "../mydata"
 import { Link } from 'react-router-dom'
+import Card from '../card/Card'
+import FetchCard from './FetchCard'
 function Dbody() {
   return (
     <div className='dbody'>
@@ -14,10 +15,12 @@ function Dbody() {
             <i className="fa-duotone fa-plus addcardicon"></i>
             </div>
         </Link>
-       {
+       {/* {
         cardDetail.map((item,index)=>
-        <Card data={item} key={index}/>)
-       }
+          <Card data = {item}/>
+        )
+       } */}
+       <FetchCard />
         </div>
     </div>
   )

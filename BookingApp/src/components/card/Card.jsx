@@ -43,7 +43,7 @@ function Card({ data }) {
           <span>Booking is {isOn ? "ON" : "OFF"}</span>
         </div>
         <div className='durationDiv'>
-          <i class="fa-regular fa-clock"></i>
+          <i className="fa-regular fa-clock"></i>
           <span>{`${data.duration} mins`}</span>
         </div>  
       </div>
