@@ -1,4 +1,3 @@
-import Card from "../components/card/Card";
 
 export const fetchBookings = async() => {
     try {
@@ -15,12 +14,10 @@ export const fetchBookings = async() => {
         throw new Error('Failed to fetch order children');
       }
       const data = await response.json();
-      // console.log(data);
       return data;
       
     } catch (error) {
       console.log(error);
-      // toast.error('Error fetching orders:', error);
       return null;
     }
 }

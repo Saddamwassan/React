@@ -1,12 +1,22 @@
-import React from 'react'
+import React,{useState,  useEffect} from 'react'
 import Nav from '../../components/dashboard/nav'
 import "./schedule.css"
 import Footer from '../../components/dashboard/Footer';
 import { Link } from 'react-router-dom';
-import data from '../../components/mydata';
+// import data from '../../components/mydata';
+import { fetchServices } from '../../Services/ScheduleService';
 import Swal from 'sweetalert2';
 import { COLOR } from 'rsuite/esm/utils/constants';
+import moment from 'moment';
 function Myschedules(){
+  const [schedule,setSchedule] = useState([]);
+  useEffect(()=>{
+    fetchServices()
+    .then(data =>setSchedule(data))
+    .catch(error => console.log('error',error))
+  },[]);
+let currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+console.log(currentDate);
   const alert = ()=>{
     Swal.fire({
       title: "Are you sure?",
@@ -35,7 +45,7 @@ function Myschedules(){
         <table className='tablerow'>
           <thead>
           <tr>
-            <th>Day</th>
+            <th>Date</th>
             <th>Duration</th>
             <th>Meeting Type</th>
             <th>With</th>
@@ -45,12 +55,12 @@ function Myschedules(){
           </thead>
           <tbody>
             {
-               data.map((item)=>
+               schedule.map((item)=>
                 <tr>
-                  <td className='day'>{item.day}</td>
+                  <td className='day'>{item.schedule_dt}</td>
                   <td className=''>{item.duration} minutes</td>
-                  <td className='meetingtype'>{item.title}</td>
-                  <td className='with'>{item.with}</td>
+                  <td className='meetingtype'>{}</td>
+                  <td className='with'>{item.fullname}</td>
                   <td className='status'><div className='statusbtn' style={{backgroundColor:item.status?'green':'#DC3545'}}>{item.status?"Scheduled":"Cancel"}</div></td>
                   <td className='action'>
                     <Link to='#' className='actioncancel' onClick={alert}>Cancel</Link>

@@ -1,9 +1,14 @@
-import React from 'react'
-import cardDetail from "../mydata"
+import React,{useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import { fetchBookings } from '../../Services/BookingService';
 import Card from '../card/Card'
-import FetchCard from './FetchCard'
 function Dbody() {
+  const [bookings, setBookings] = useState([]);
+    useEffect(()=>{
+        fetchBookings()
+       .then(data => setBookings(data))
+       .catch(error => console.log('error',error));
+    },[])
   return (
     <div className='dbody'>
         <div className="text">
@@ -15,12 +20,10 @@ function Dbody() {
             <i className="fa-duotone fa-plus addcardicon"></i>
             </div>
         </Link>
-       {/* {
-        cardDetail.map((item,index)=>
-          <Card data = {item}/>
-        )
-       } */}
-       <FetchCard />
+        {
+        bookings.map((item,index)=>
+        <Card data={item} value ={index}/>)
+        }
         </div>
     </div>
   )

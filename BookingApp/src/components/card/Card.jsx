@@ -4,7 +4,8 @@ import "./card.css"
 import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
-function Card({ data }) {
+function Card({ data,value }) {
+  // console.log(data);
   const alert = ()=>{
     Swal.fire({
       title: "Are you sure?",
