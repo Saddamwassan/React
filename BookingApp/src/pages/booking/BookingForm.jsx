@@ -1,6 +1,6 @@
 import './bookingform.css'
 import Nav from '../../components/dashboard/nav'
-import React, { Component } from 'react';
+import React, { useState,Component } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
@@ -10,6 +10,10 @@ import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 
 function BookingForm() {
+  // const[isFormVisible, setFormVisible] = useState(true);
+  // const handleFormVisibility = ()=>{
+  //   setFormVisible(false);
+  // }
   // setter 
   const setter = ()=>{
 
@@ -17,6 +21,9 @@ function BookingForm() {
   // getter 
   const getter = ()=>{
     
+  }
+  function closeForm(){
+
   }
   // alert 
   const alert = ()=>{
@@ -131,7 +138,7 @@ function BookingForm() {
             </div>
             <p>Define specific dates to exclude from your weekly availibility.</p>
             <div className="btnrow">
-              <Link to='#' className='cancel'>Cancel</Link>
+              <Link to='/dashboard' className='cancel'>Cancel</Link>
               <Button type="Add booking" className="Add_booking" onClick={alert}/>
             </div>
           </div>

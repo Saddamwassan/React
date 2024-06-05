@@ -12,7 +12,7 @@ function Dbody() {
   return (
     <div className='dbody'>
         <div className="text">
-        <h2>Your Appointments</h2>
+        <h2>Appointments</h2>
         </div>
         <div className="cards">
         <Link to="/bookingform" style={{ textDecoration: 'none' }}>
@@ -22,7 +22,7 @@ function Dbody() {
         </Link>
         {
         bookings.map((item,index)=>
-        <Card data={item} value ={index}/>)
+        <Card data={item} key ={index}/>)
         }
         </div>
     </div>

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 // import data from '../../components/mydata';
 import { fetchServices } from '../../Services/ScheduleService';
 import Swal from 'sweetalert2';
-import { COLOR } from 'rsuite/esm/utils/constants';
-import moment from 'moment';
+// import { COLOR } from 'rsuite/esm/utils/constants';
+import { convertTimeStamp } from '../../helpers/TimeStampConvert';
 function Myschedules(){
   const [schedule,setSchedule] = useState([]);
   useEffect(()=>{
@@ -15,8 +15,11 @@ function Myschedules(){
     .then(data =>setSchedule(data))
     .catch(error => console.log('error',error))
   },[]);
-let currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
-console.log(currentDate);
+console.log(convertTimeStamp("2024-06-19T06:34:46"));
+
+ 
+
+// TimestampConverter()
   const alert = ()=>{
     Swal.fire({
       title: "Are you sure?",
@@ -56,10 +59,10 @@ console.log(currentDate);
           <tbody>
             {
                schedule.map((item)=>
-                <tr>
-                  <td className='day'>{item.schedule_dt}</td>
+                <tr key={item.id}>
+                  <td className='day'>{item.schedule_dt ? convertTimeStamp(item.schedule_dt) : ''}</td>
                   <td className=''>{item.duration} minutes</td>
-                  <td className='meetingtype'>{}</td>
+                  <td className='meetingtype'>{item.message}</td>
                   <td className='with'>{item.fullname}</td>
                   <td className='status'><div className='statusbtn' style={{backgroundColor:item.status?'green':'#DC3545'}}>{item.status?"Scheduled":"Cancel"}</div></td>
                   <td className='action'>
