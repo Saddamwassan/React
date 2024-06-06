@@ -4,4 +4,4 @@ import moment from 'moment';
 export const convertTimeStamp = ({ timestamp }) => {
   const formattedDate = moment(timestamp).format('MMM Do, YYYY h:mm A');
   return formattedDate;
-};
+}
