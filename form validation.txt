@@ -1,0 +1,4 @@
+with react hook
+
+1. npm i react-hook-form
+2. import useForm 
