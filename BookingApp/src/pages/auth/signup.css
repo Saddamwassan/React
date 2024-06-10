@@ -3,6 +3,15 @@
     padding:0;
     box-sizing:border-box;
     font-family:sans-serif;
+  } 
+  form .rowdiv{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+  }
+  form p{
+    text-align:left;
+    color:red;
   }
   .logologin{
     width:170px;
@@ -50,7 +59,7 @@
   }
   .image{
     border-radius:12px 0 0 12px;
-    height:672px;
+    height:825px;
     width:400px;
   }
   /* Signup heading */
@@ -60,6 +69,7 @@
   /* welcome text */
   .welcometxt{
     text-align: center;
+    color:black;
   }
   .signUpWithGoogle{
     width:100%;
