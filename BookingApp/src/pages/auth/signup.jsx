@@ -81,7 +81,7 @@ function Signup(){
       <input type={isShow?"text":"password"} className='passwordinput' placeholder="Create a password" name="password"  value ={formValues.password} onChange={handleChanges}/>
       {isShow
       ?
-      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShow(false)}></i>
+      <i className="fa-regular fa-eye-slash eyeicon" onClick={()=>setShow(false)}></i>
       :
       <i className="fa-regular fa-eye eyeicon" onClick={()=>setShow(true)}></i>
       }
@@ -96,7 +96,7 @@ function Signup(){
       <input type={isShowConfirmPass?"text":"password"} className='passwordinput' placeholder="Confirm password" name="confirmpassword" value ={formValues.confirmpassword} onChange={handleChanges}/>
       {isShowConfirmPass
       ?
-      <i class="fa-regular fa-eye-slash eyeicon" onClick={()=>setShowConfirmPass(false)}></i>
+      <i className="fa-regular fa-eye-slash eyeicon" onClick={()=>setShowConfirmPass(false)}></i>
       :
       <i className="fa-regular fa-eye eyeicon" onClick={()=>setShowConfirmPass(true)}></i>
     }
@@ -105,14 +105,14 @@ function Signup(){
     </div>
 
     
-    <button className="signupbtn" value = "submit" > Sign up</button>
+    <button className="signupbtn" type = "submit" > Sign up</button>
     {/*  hrdiv  */}
     <div className="hrdiv">
      <div className="hr"></div>
      <span className="hrtext" >OR</span>
     </div>
     {/* signup with google  */}
-    <button className="signUpWithGoogle"> <i className="fa-brands fa-google"></i> <span> Signup with google</span></button>
+    <button className="signUpWithGoogle"> <i className="fa-brands fa-google" type="google"></i> <span> Signup with google</span></button>
   </form>
   )
 }
