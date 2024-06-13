@@ -10,7 +10,7 @@ function Login() {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const data = {email,password}
-    axios.post('http://localhost:8000/users/login', data)
+    axios.post('http://localhost:8080/users/login', data)
         .then(res => {
           // if(res.data){
             console.log(res);
