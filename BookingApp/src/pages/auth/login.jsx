@@ -12,7 +12,6 @@ function Login() {
     const data = {email,password}
     axios.post('http://localhost:8080/users/login', data)
         .then(res => {
-          // if(res.data){
             console.log(res);
             e.target.reset();
             Swal.fire({
@@ -22,9 +21,7 @@ function Login() {
               showConfirmButton: false,
               timer: 1500
             });
-          // }else{
-          //   console.log('user not found!');
-          // }
+         
         })
         .catch(err => console.log(err));
   }

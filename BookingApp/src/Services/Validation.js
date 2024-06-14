@@ -20,7 +20,7 @@ export const validate = (value)=>{
       errors.password= "password is required!";
     }
     if(!value.confirmpassword){
-      errors.confirmpassword= "confirmpassword is required!";
+      errors.confirmpassword= "confirm password is required!";
     }else if(value.password != value.confirmpassword){
       errors.confirmpassword = 'password does not match!'
     }
